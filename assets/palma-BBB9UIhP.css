@@ -1,0 +1,129 @@
+.floorplan {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 32px;
+
+  & aside {
+      display: flex;
+      flex-direction: column;
+
+      &>h2 {
+          margin-bottom: 48px;
+      }
+
+      & details {
+          border-top: 1px solid #e3ded9;
+
+          & summary {
+              text-transform: uppercase;
+              padding: 12px 16px;
+              list-style: none;
+              color: #9E8E82;
+              cursor: pointer;
+              font-size: 24px;
+
+              &::-webkit-details-marker {
+                  display: none;
+              }
+          }
+
+          &:last-child {
+              border-bottom: 1px solid #e3ded9;
+              margin-bottom: 72px;
+          }
+      }
+
+      & .interior,
+      & .exterior,
+      & .title {
+          margin-top: 0px;
+          margin-bottom: 12px;
+      }
+
+      & .level,
+      & .rooms {
+          margin-top: 0px;
+          margin-bottom: 24px;
+      }
+
+      & .total {
+          margin-top: 0;
+      }
+
+      & a[download] {
+          display: flex;
+          margin: 0px;
+          width: 100%;
+          margin-top: 60px;
+          text-transform: uppercase;
+          padding: 12px 24px;
+          border: 1px solid #9E8E82;
+          transition: color 200ms, background-color 200ms;
+          text-align: center;
+          justify-content: center;
+
+          &:hover {
+              background-color: #9E8E82;
+              color: #FFFFFF;
+          }
+      }
+  }
+
+
+  & .viewer {
+      display: flex;
+      flex-direction: column;
+      grid-column: span 3 / span 3;
+
+      & h3 {
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 48px;
+          margin-top: 0;
+      }
+  }
+
+  svg .floor {
+      & .bg {
+          fill: #FFFFFF;
+          transition: fill 200ms ease;
+          cursor: pointer;
+      }
+
+      &.active .bg,
+      &:hover .bg {
+          fill: #beb9b0;
+      }
+
+      &.disabled .bg {
+        fill: #dfdfdf;
+        cursor: not-allowed;
+    }
+  }
+
+  @media (max-width: 1020px) {
+      display: flex;
+      flex-direction: column;
+
+      & aside {
+          display: flex;
+          flex-direction: row;
+          gap: 10rem;
+      }
+  }
+
+  @media (max-width: 650px) {
+      & aside {
+          gap: 3rem;
+          flex-direction: column;
+
+          details:last-child {
+              margin-bottom: 0px;
+          }
+      }
+
+      & .viewer {
+          display: none;
+      }
+  }
+}
