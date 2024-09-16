@@ -1,0 +1,28 @@
+
+{
+    "floors": [
+        {
+            "id": "level_5-9",
+            "title": "LEVEL 5-9",
+            "svgUrl": "/src/assets/imgs/palma/Level 5-9/floor.svg" 
+        },
+        {
+            "id": "level_4",
+            "title": "LEVEL 4",
+            "svgUrl": "/src/assets/imgs/palma/Level 5-9/floor.svg"    
+        }
+    ],
+    "residences": [
+        {
+            "id": "5-9_04",
+            "title": "RESIDENCE 04",
+            "level": "LEVELS 11-34",
+            "imgUrl": "/src/assets/imgs/palma/Level 5-9/04.png",
+            "rooms": "2 Bedrooms / 2 Bathrooms",
+            "interior": "909 S.F. | 84.4 S.M.",
+            "exterior": "157 S.F. | 14.5 S.M.",
+            "total": "1,066 S.F. | 98.9 S.M.", 
+            "brochureUrl": "https://edgehousemiami.com/wp-content/uploads/2024/08/C1_L11-56.pdf"
+        }
+    ]
+}
