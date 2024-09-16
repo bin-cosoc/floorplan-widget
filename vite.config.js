@@ -16,12 +16,11 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        palma: resolve(__dirname, 'src/palma.js') // New entry point
+        palma: resolve(__dirname, 'pages/palma.html'), // New entry point
+        // edge: resolve(__dirname, 'src/edge.js') // New entry point
       },
       output: {
-        entryFileNames: '[name].js', // Output file name without hash
-        chunkFileNames: '[name].js', // Output chunk file name without hash
-        assetFileNames: '[name].[ext]' // Output asset file name without hash
+        entryFileNames: `[name].js`,
       }
     }
   }
