@@ -51,9 +51,11 @@
           margin-top: 0;
       }
 
-      & a[download] {
+      & button.download {
+          all: unset;
           display: flex;
           margin: 0px;
+          width: 100%;
           margin-top: 60px;
           text-transform: uppercase;
           padding: 12px 24px;

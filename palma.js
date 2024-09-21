@@ -7307,6 +7307,28 @@ const _sfc_main$2 = {
   },
   async mounted() {
     this.pdfs = await getPDFs();
+  },
+  methods: {
+    async onClickDownload(e) {
+      const url = e.srcElement.dataset.href;
+      const response = await fetch(url, {
+        mode: "cors",
+        method: "GET",
+        headers: { "Content-Type": "application/pdf" }
+      });
+      const blob = await response.blob();
+      this.onDownloadFile(blob);
+    },
+    onDownloadFile(blob) {
+      const url = URL.createObjectURL(blob);
+      const anchor = document.createElement("a");
+      anchor.href = url;
+      anchor.download = "FloorPlan.pdf";
+      document.body.appendChild(anchor);
+      anchor.click();
+      URL.revokeObjectURL(url);
+      anchor.remove();
+    }
   }
 };
 const _hoisted_1$2 = { class: "floorplan-container" };
@@ -7318,12 +7340,12 @@ const _hoisted_6 = { class: "rooms" };
 const _hoisted_7 = { class: "interior" };
 const _hoisted_8 = { class: "exterior" };
 const _hoisted_9 = { class: "total" };
-const _hoisted_10 = ["href"];
+const _hoisted_10 = ["data-href"];
 function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_Floor = resolveComponent("Floor");
   return openBlock(), createElementBlock("aside", null, [
     createBaseVNode("div", _hoisted_1$2, [
-      _cache[0] || (_cache[0] = createBaseVNode("h1", null, "FLOOR PLANS", -1)),
+      _cache[1] || (_cache[1] = createBaseVNode("h1", null, "FLOOR PLANS", -1)),
       (openBlock(), createBlock(Suspense, null, {
         default: withCtx(() => [
           (openBlock(true), createElementBlock(Fragment, null, renderList(_ctx.$floorplan.floors, (data) => {
@@ -7343,23 +7365,24 @@ function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
         createBaseVNode("h4", _hoisted_5, toDisplayString($setup.store.selected.level), 1),
         createBaseVNode("p", _hoisted_6, toDisplayString($setup.store.selected.rooms), 1),
         createBaseVNode("p", null, [
-          _cache[1] || (_cache[1] = createBaseVNode("b", null, "Interior:", -1)),
+          _cache[2] || (_cache[2] = createBaseVNode("b", null, "Interior:", -1)),
           createBaseVNode("span", _hoisted_7, toDisplayString($setup.store.selected.interior), 1)
         ]),
         createBaseVNode("p", null, [
-          _cache[2] || (_cache[2] = createBaseVNode("b", null, "Exterior:", -1)),
+          _cache[3] || (_cache[3] = createBaseVNode("b", null, "Exterior:", -1)),
           createBaseVNode("span", _hoisted_8, toDisplayString($setup.store.selected.exterior), 1)
         ]),
         createBaseVNode("p", null, [
-          _cache[3] || (_cache[3] = createBaseVNode("b", null, "Total:", -1)),
+          _cache[4] || (_cache[4] = createBaseVNode("b", null, "Total:", -1)),
           createBaseVNode("span", _hoisted_9, toDisplayString($setup.store.selected.total), 1)
         ])
       ]),
-      $options.pdfUrl ? (openBlock(), createElementBlock("a", {
+      $options.pdfUrl ? (openBlock(), createElementBlock("button", {
         key: 0,
         id: "downloadButton",
-        href: $options.pdfUrl,
-        download: "FloorPlan.pdf"
+        "data-href": $options.pdfUrl,
+        class: "download",
+        onClick: _cache[0] || (_cache[0] = (...args) => $options.onClickDownload && $options.onClickDownload(...args))
       }, " DOWNLOAD FLOOR PLAN ", 8, _hoisted_10)) : createCommentVNode("", true)
     ])
   ]);
