@@ -7312,7 +7312,7 @@ const _sfc_main$2 = {
     async onClickDownload(e) {
       const url = e.srcElement.dataset.href;
       const response = await fetch(url, {
-        mode: "cors",
+        mode: "no-cors",
         method: "GET",
         headers: { "Content-Type": "application/pdf" }
       });
