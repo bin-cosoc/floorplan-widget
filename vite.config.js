@@ -18,11 +18,16 @@ export default defineConfig({
     minify: false,
     rollupOptions: {
       input: {
-        palma: resolve(__dirname, 'pages/palma.html'), // New entry point
-        // edge: resolve(__dirname, 'src/edge.js') // New entry point
+        palma: resolve(__dirname, 'pages/palma.html'),
+        // edge: resolve(__dirname, 'src/edge.js')
       },
       output: {
         entryFileNames: `[name].js`,
+        assetFileNames: (assetInfo) => {
+          return assetInfo.name.endsWith('.css')
+            ? 'assets/[name][extname]'
+            : 'assets/[name]-[hash][extname]';
+        },
       }
     }
   }

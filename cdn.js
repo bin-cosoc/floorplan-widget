@@ -11,14 +11,12 @@ export function useCDN(baseUrl) {
         name: 'vite-plugin-cnd',
         enforce: 'post',
         generateBundle(_, bundle) {
-            console.log(bundle)
             for (const path in bundle) {
                 const file = bundle[path];
 
                 if (!/\.(js|html)$/.test(path)) continue;
                 if (file.code) onJsFile(file, baseUrl);
-                if (file.source) onHtmlFile(file, baseUrl);
-                
+                if (file.source) onHtmlFile(file, baseUrl);    
             }
         }
     }
