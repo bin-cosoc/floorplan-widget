@@ -2,27 +2,153 @@
 {
     "floors": [
         {
-            "id": "level_5-9",
-            "title": "LEVEL 5-9",
-            "svgUrl": "/src/assets/imgs/palma/Level 5-9/floor.svg" 
+            "id": "level_3",
+            "title": "LEVEL 3",
+            "svgUrl": "/src/assets/imgs/palma/3/floor.svg"    
         },
         {
-            "id": "level_4",
-            "title": "LEVEL 4",
-            "svgUrl": "/src/assets/imgs/palma/Level 5-9/floor.svg"    
+            "id": "level_4-12",
+            "title": "LEVEL 4-12",
+            "svgUrl": "/src/assets/imgs/palma/4-12/floor.svg"    
+        },
+        {
+            "id": "level_4-12",
+            "title": "PENTHOUSE",
+            "svgUrl": "/src/assets/imgs/palma/PH/floor.svg"    
         }
     ],
     "residences": [
         {
-            "id": "5-9_04",
-            "title": "RESIDENCE 04",
-            "level": "LEVELS 11-34",
-            "imgUrl": "/src/assets/imgs/palma/Level 5-9/04.png",
-            "rooms": "2 Bedrooms / 2 Bathrooms",
-            "interior": "909 S.F. | 84.4 S.M.",
-            "exterior": "157 S.F. | 14.5 S.M.",
-            "total": "1,066 S.F. | 98.9 S.M.", 
-            "brochureUrl": "https://edgehousemiami.com/wp-content/uploads/2024/08/C1_L11-56.pdf"
+            "id": "4-12_01",
+            "title": "A5 / 01",
+            "level": "LEVELS 4-12",
+            "imgUrl": "/src/assets/imgs/palma/4-12/01.png",
+            "rooms": "Two bed / One bath",
+            "interior": "620 SQFT | 58 M2",
+            "exterior": "149 SQFT | 14 M2",
+            "total": "769 SQFT | 71 M2", 
+            "brochureUrl": "/src/assets/pdfs/palma/4-12/01.pdf"
+        },
+        {
+            "id": "4-12_02",
+            "title": "B1 / 02",
+            "level": "LEVELS 4-12",
+            "imgUrl": "/src/assets/imgs/palma/4-12/02.png",
+            "rooms": "Two bed / Two bath",
+            "interior": "889 SQFT | 83 M2",
+            "exterior": "291 SQFT | 27 M2",
+            "total": "1,180 SQFT | 110 M2", 
+            "brochureUrl": "/src/assets/pdfs/palma/4-12/02.pdf"
+        },
+        {
+            "id": "4-12_03",
+            "title": "A7 / 03",
+            "level": "LEVELS 4-12",
+            "imgUrl": "/src/assets/imgs/palma/4-12/03.png",
+            "rooms": "One bed / One bath",
+            "interior": "410 SQFT | 38 M2",
+            "exterior": "58 SQFT | 5 M2",
+            "total": "468 SQFT | 43 M2", 
+            "brochureUrl": "/src/assets/pdfs/palma/4-12/03.pdf"
+        },
+        {
+            "id": "4-12_04",
+            "title": "A1C / 04",
+            "level": "LEVELS 4-12",
+            "imgUrl": "/src/assets/imgs/palma/4-12/04.png",
+            "rooms": "One bed / One bath",
+            "interior": "413 SQFT | 39 M2",
+            "exterior": "150 SQFT | 14 M2",
+            "total": "563 SQFT | 52 M2", 
+            "brochureUrl": "/src/assets/pdfs/palma/4-12/04.pdf"
+        },
+        {
+            "id": "4-12_05",
+            "title": "A7 / 05",
+            "level": "LEVELS 4-12",
+            "imgUrl": "/src/assets/imgs/palma/4-12/05.png",
+            "rooms": "One bed / One bath",
+            "interior": "405 SQFT | 38 M2",
+            "exterior": "90 SQFT | 8 M2",
+            "total": "495 SQFT | 46 M2", 
+            "brochureUrl": "/src/assets/pdfs/palma/4-12/05.pdf"
+        },
+        {
+            "id": "4-12_06",
+            "title": "A1B / 06",
+            "level": "LEVELS 4-12",
+            "imgUrl": "/src/assets/imgs/palma/4-12/06.png",
+            "rooms": "One bed / One bath",
+            "interior": "423 SQFT | 39 M2",
+            "exterior": "151 SQFT | 14 M2",
+            "total": "574 SQFT | 53 M2", 
+            "brochureUrl": "/src/assets/pdfs/palma/4-12/06.pdf"
+        },
+        {
+            "id": "4-12_07",
+            "title": "A6 / 07",
+            "level": "LEVELS 4-12",
+            "imgUrl": "/src/assets/imgs/palma/4-12/07.png",
+            "rooms": "One bed / One bath",
+            "interior": "442 SQFT | 41 M2",
+            "exterior": "99 SQFT | 9 M2",
+            "total": "541 SQFT | 50 M2", 
+            "brochureUrl": "/src/assets/pdfs/palma/4-12/07.pdf"
+        },
+        {
+            "id": "4-12_08",
+            "title": "A1 / 08",
+            "level": "LEVELS 4-12",
+            "imgUrl": "/src/assets/imgs/palma/4-12/08.png",
+            "rooms": "One bed / One bath",
+            "interior": "408 SQFT | 38 M2",
+            "exterior": "140 SQFT | 13 M2",
+            "total": "548 SQFT | 51 M2", 
+            "brochureUrl": "/src/assets/pdfs/palma/4-12/04.pdf"
+        },
+        {
+            "id": "4-12_09",
+            "title": "A6 / 09",
+            "level": "LEVELS 4-12",
+            "imgUrl": "/src/assets/imgs/palma/4-12/09.png",
+            "rooms": "One bed / One bath",
+            "interior": "440 SQFT | 41 M2",
+            "exterior": "102 SQFT | 9 M2",
+            "total": "542 SQFT | 50 M2", 
+            "brochureUrl": "/src/assets/pdfs/palma/4-12/09.pdf"
+        },
+        {
+            "id": "4-12_10",
+            "title": "A10 / 10",
+            "level": "LEVELS 4-12",
+            "imgUrl": "/src/assets/imgs/palma/4-12/10.png",
+            "rooms": "One bed / One bath",
+            "interior": "426 SQFT | 40 M2",
+            "exterior": "135 SQFT | 12 M2",
+            "total": "561 SQFT | 52 M2", 
+            "brochureUrl": "/src/assets/pdfs/palma/4-12/10.pdf"
+        },
+        {
+            "id": "4-12_11",
+            "title": "B2 / 11",
+            "level": "LEVELS 4-12",
+            "imgUrl": "/src/assets/imgs/palma/4-12/11.png",
+            "rooms": "One bed / One bath",
+            "interior": "843 SQFT | 78 M2",
+            "exterior": "243 SQFT | 23 M2",
+            "total": "1,086 SQFT | 101 M2", 
+            "brochureUrl": "/src/assets/pdfs/palma/4-12/11.pdf"
+        },
+        {
+            "id": "4-12_12",
+            "title": "A4 / 12",
+            "level": "LEVELS 4-12",
+            "imgUrl": "/src/assets/imgs/palma/4-12/12.png",
+            "rooms": "One bed / One bath",
+            "interior": "558 SQFT | 52 M2",
+            "exterior": "201 SQFT | 19 M2",
+            "total": "759 SQFT | 71 M2", 
+            "brochureUrl": "/src/assets/pdfs/palma/4-12/12.pdf"
         }
     ]
 }

@@ -1,7 +1,9 @@
 <template>
     <div class="viewer">
         <h3 id="residenceTitle">{{ store.selected.title }}</h3>
-        <img v-if="pngUrl" id="floorplan-image" :src="pngUrl" alt="">
+        <div class="container">
+            <img v-if="pngUrl" id="floorplan-image" :src="pngUrl" alt="">
+        </div>
     </div>
 </template>
 <script>

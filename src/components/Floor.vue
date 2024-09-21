@@ -60,7 +60,9 @@ export default {
                 item.classList.add('active');
             }
 
-       
+            if (this.store.selected == residence) {
+                item.classList.add('active');
+            }       
         }
     }
 }
