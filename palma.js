@@ -7131,6 +7131,18 @@ function defineStore(idOrOptions, setup, setupOptions) {
   useStore2.$id = id;
   return useStore2;
 }
+const useStore = /* @__PURE__ */ defineStore("FloorplanStore", {
+  state() {
+    const { appContext } = getCurrentInstance();
+    const floorplan = appContext.config.globalProperties.$floorplan;
+    return {
+      selected: floorplan.residences[0],
+      residences: Object.fromEntries(
+        floorplan.residences.map((o) => [o.id, o])
+      )
+    };
+  }
+});
 const scriptRel = "modulepreload";
 const assetsURL = function(dep) {
   return "/" + dep;
@@ -7195,18 +7207,6 @@ const __vitePreload = function preload(baseModule, deps, importerUrl) {
     return baseModule().catch(handlePreloadError);
   });
 };
-const useStore = /* @__PURE__ */ defineStore("FloorplanStore", {
-  state() {
-    const { appContext } = getCurrentInstance();
-    const floorplan = appContext.config.globalProperties.$floorplan;
-    return {
-      selected: floorplan.residences[0],
-      residences: Object.fromEntries(
-        floorplan.residences.map((o) => [o.id, o])
-      )
-    };
-  }
-});
 const _export_sfc = (sfc, props) => {
   const target = sfc.__vccOpts || sfc;
   for (const [key, val] of props) {
@@ -7280,14 +7280,6 @@ function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
   ], 8, _hoisted_1$3);
 }
 const Floor = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render$3]]);
-async function getPDFs() {
-  const PDFS = /* @__PURE__ */ Object.assign({ "/src/assets/pdfs/palma/3/301.pdf": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/301-tKdcZWyM.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/pdfs/palma/3/302.pdf": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/302-MDq52fT6.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/pdfs/palma/3/303.pdf": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/303-kwClxUoT.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/pdfs/palma/3/304.pdf": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/304-PG10dxdJ.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/pdfs/palma/3/305.pdf": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/305-oPOoORG1.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/pdfs/palma/3/307.pdf": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/307-U1ECJ8Mm.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/pdfs/palma/3/308.pdf": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/308-3UZ8vOCk.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/pdfs/palma/3/309.pdf": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/309-BQH0vTWg.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/pdfs/palma/3/310.pdf": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/310-BQ5-5LlV.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/pdfs/palma/3/311.pdf": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/311-Cf5plN2A.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/pdfs/palma/4-12/01.pdf": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/01-hUjCYTvz.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/pdfs/palma/4-12/02.pdf": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/02-C5pOhNAn.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/pdfs/palma/4-12/03.pdf": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/03-Dxf2CivY.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/pdfs/palma/4-12/04.pdf": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/04-Cf4dTFzR.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/pdfs/palma/4-12/05.pdf": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/05-C-ndOkpn.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/pdfs/palma/4-12/06.pdf": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/06-BrHH7HUq.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/pdfs/palma/4-12/07.pdf": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/07-BsxM3yzC.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/pdfs/palma/4-12/08.pdf": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/08-gXZZMdUP.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/pdfs/palma/4-12/09.pdf": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/09-D3Ck85Q0.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/pdfs/palma/4-12/10.pdf": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/10-DGlVvRTK.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/pdfs/palma/4-12/11.pdf": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/11-Do8YTawG.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/pdfs/palma/4-12/12.pdf": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/12-CM_OJyNJ.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/pdfs/palma/PH/PH1.pdf": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/PH1-Dr1CulaE.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/pdfs/palma/PH/PH2.pdf": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/PH2-CUBYj4N4.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/pdfs/palma/PH/PH3.pdf": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/PH3-BUTOvvm9.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/pdfs/palma/PH/PH4.pdf": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/PH4-DxS6g4z2.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/pdfs/palma/PH/PH5.pdf": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/PH5-CMT58xvJ.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/pdfs/palma/PH/PH6.pdf": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/PH6-CiCv8jd5.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/pdfs/palma/PH/PH7.pdf": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/PH7-DOZ2AcwB.js"), true ? [] : void 0).then((m) => m["default"]) });
-  const promises = Object.entries(PDFS).map(async ([k, v]) => {
-    return [k, await v()];
-  });
-  const data = await Promise.all(promises);
-  return Object.fromEntries(data);
-}
 const _sfc_main$2 = {
   components: { Floor },
   setup() {
@@ -7295,18 +7287,10 @@ const _sfc_main$2 = {
       store: useStore()
     };
   },
-  data() {
-    return {
-      pdfs: {}
-    };
-  },
   computed: {
     pdfUrl() {
-      return this.pdfs[this.store.selected.brochureUrl];
+      return this.store.selected.brochureUrl;
     }
-  },
-  async mounted() {
-    this.pdfs = await getPDFs();
   }
 };
 const _hoisted_1$2 = { class: "floorplan-container" };
@@ -7459,7 +7443,7 @@ const residences = [
     interior: "620 SQFT | 58 M2",
     exterior: "149 SQFT | 14 M2",
     total: "769 SQFT | 71 M2",
-    brochureUrl: "/src/assets/pdfs/palma/4-12/01.pdf"
+    brochureUrl: "./4-12_01"
   },
   {
     id: "4-12_02",
@@ -7470,7 +7454,7 @@ const residences = [
     interior: "889 SQFT | 83 M2",
     exterior: "291 SQFT | 27 M2",
     total: "1,180 SQFT | 110 M2",
-    brochureUrl: "/src/assets/pdfs/palma/4-12/02.pdf"
+    brochureUrl: "./4-12_02"
   },
   {
     id: "4-12_03",
@@ -7481,7 +7465,7 @@ const residences = [
     interior: "410 SQFT | 38 M2",
     exterior: "58 SQFT | 5 M2",
     total: "468 SQFT | 43 M2",
-    brochureUrl: "/src/assets/pdfs/palma/4-12/03.pdf"
+    brochureUrl: "./4-12_03"
   },
   {
     id: "4-12_04",
@@ -7492,7 +7476,7 @@ const residences = [
     interior: "413 SQFT | 39 M2",
     exterior: "150 SQFT | 14 M2",
     total: "563 SQFT | 52 M2",
-    brochureUrl: "/src/assets/pdfs/palma/4-12/04.pdf"
+    brochureUrl: "./4-12_04"
   },
   {
     id: "4-12_05",
@@ -7503,7 +7487,7 @@ const residences = [
     interior: "405 SQFT | 38 M2",
     exterior: "90 SQFT | 8 M2",
     total: "495 SQFT | 46 M2",
-    brochureUrl: "/src/assets/pdfs/palma/4-12/05.pdf"
+    brochureUrl: "./4-12_05"
   },
   {
     id: "4-12_06",
@@ -7514,7 +7498,7 @@ const residences = [
     interior: "423 SQFT | 39 M2",
     exterior: "151 SQFT | 14 M2",
     total: "574 SQFT | 53 M2",
-    brochureUrl: "/src/assets/pdfs/palma/4-12/06.pdf"
+    brochureUrl: "./4-12_06"
   },
   {
     id: "4-12_07",
@@ -7525,7 +7509,7 @@ const residences = [
     interior: "442 SQFT | 41 M2",
     exterior: "99 SQFT | 9 M2",
     total: "541 SQFT | 50 M2",
-    brochureUrl: "/src/assets/pdfs/palma/4-12/07.pdf"
+    brochureUrl: "./4-12_07"
   },
   {
     id: "4-12_08",
@@ -7536,7 +7520,7 @@ const residences = [
     interior: "408 SQFT | 38 M2",
     exterior: "140 SQFT | 13 M2",
     total: "548 SQFT | 51 M2",
-    brochureUrl: "/src/assets/pdfs/palma/4-12/04.pdf"
+    brochureUrl: "./4-12_04"
   },
   {
     id: "4-12_09",
@@ -7547,7 +7531,7 @@ const residences = [
     interior: "440 SQFT | 41 M2",
     exterior: "102 SQFT | 9 M2",
     total: "542 SQFT | 50 M2",
-    brochureUrl: "/src/assets/pdfs/palma/4-12/09.pdf"
+    brochureUrl: "./4-12_09"
   },
   {
     id: "4-12_10",
@@ -7558,7 +7542,7 @@ const residences = [
     interior: "426 SQFT | 40 M2",
     exterior: "135 SQFT | 12 M2",
     total: "561 SQFT | 52 M2",
-    brochureUrl: "/src/assets/pdfs/palma/4-12/10.pdf"
+    brochureUrl: "./4-12_10"
   },
   {
     id: "4-12_11",
@@ -7569,7 +7553,7 @@ const residences = [
     interior: "843 SQFT | 78 M2",
     exterior: "243 SQFT | 23 M2",
     total: "1,086 SQFT | 101 M2",
-    brochureUrl: "/src/assets/pdfs/palma/4-12/11.pdf"
+    brochureUrl: "./4-12_11"
   },
   {
     id: "4-12_12",
@@ -7580,7 +7564,7 @@ const residences = [
     interior: "558 SQFT | 52 M2",
     exterior: "201 SQFT | 19 M2",
     total: "759 SQFT | 71 M2",
-    brochureUrl: "/src/assets/pdfs/palma/4-12/12.pdf"
+    brochureUrl: "./4-12_12"
   }
 ];
 const Data = {
