@@ -8,8 +8,9 @@
         display: flex;
         flex-direction: column;
 
-        &>h2 {
-            margin-bottom: 48px;
+        & h2 {
+            margin-top: 0;
+            margin-bottom: 24px;
         }
 
         & details {
@@ -115,14 +116,18 @@
         }
     }
 
-    @media (max-width: 1020px) {
+    @media (max-width: 1024px) {
         display: flex;
         flex-direction: column;
 
         & aside {
-            display: flex;
-            flex-direction: row;
-            gap: 10rem;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 64px;
+
+            & .floorplan-container {
+                grid-column: 2 span / 2 span;
+            }
         }
 
         & .viewer .container img {
@@ -130,10 +135,14 @@
         }
     }
 
-    @media (max-width: 640px) {
+    @media (max-width: 764px) {
         & aside {
-            gap: 3rem;
-            flex-direction: column;
+            gap: 16px;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+
+            & .floorplan-container {
+                grid-column: 1 span / 1 span;
+            }
 
             details:last-child {
                 margin-bottom: 0px;

@@ -7265,13 +7265,24 @@ const _sfc_main$3 = {
       if (this.store.selected == residence) {
         item.classList.add("active");
       }
+    },
+    onClick() {
+      const details = document.querySelectorAll(".floorplan details");
+      details.forEach((element) => {
+        if (this.$el != element && element.open) {
+          element.open = false;
+        }
+      });
     }
   }
 };
 const _hoisted_1$3 = ["id"];
 const _hoisted_2$2 = ["innerHTML"];
 function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
-  return openBlock(), createElementBlock("details", { id: $props.id }, [
+  return openBlock(), createElementBlock("details", {
+    id: $props.id,
+    onClick: _cache[0] || (_cache[0] = (...args) => $options.onClick && $options.onClick(...args))
+  }, [
     createBaseVNode("summary", null, toDisplayString($props.title), 1),
     createBaseVNode("div", {
       class: "accordion-content",
@@ -7307,7 +7318,7 @@ function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_Floor = resolveComponent("Floor");
   return openBlock(), createElementBlock("aside", null, [
     createBaseVNode("div", _hoisted_1$2, [
-      _cache[0] || (_cache[0] = createBaseVNode("h1", null, "FLOOR PLANS", -1)),
+      _cache[0] || (_cache[0] = createBaseVNode("h2", null, "FLOOR PLANS", -1)),
       (openBlock(), createBlock(Suspense, null, {
         default: withCtx(() => [
           (openBlock(true), createElementBlock(Fragment, null, renderList(_ctx.$floorplan.floors, (data) => {
@@ -7428,7 +7439,7 @@ const floors = [
     svgUrl: "/src/assets/imgs/palma/4-12/floor.svg"
   },
   {
-    id: "level_4-12",
+    id: "penthouse",
     title: "PENTHOUSE",
     svgUrl: "/src/assets/imgs/palma/PH/floor.svg"
   }
