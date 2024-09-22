@@ -1,7 +1,7 @@
 <template>
     <aside>
         <div class="floorplan-container">
-            <h1>FLOOR PLANS</h1>
+            <h2>FLOOR PLANS</h2>
             <Suspense>
                 <Floor 
                     :id="data.id"

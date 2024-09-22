@@ -1,5 +1,5 @@
 <template>
-    <details :id="id">
+    <details :id="id" @click="onClick">
         <summary>{{ title }}</summary>
         <div class="accordion-content" v-html="svgData"></div>
     </details>
@@ -63,7 +63,17 @@ export default {
             if (this.store.selected == residence) {
                 item.classList.add('active');
             }       
+        },
+        onClick() {
+            const details = document.querySelectorAll(".floorplan details");
+            
+            details.forEach(element => {
+                if (this.$el != element && element.open) {
+                    element.open = false;
+                }
+            })
         }
-    }
+    },
+    
 }
 </script>
