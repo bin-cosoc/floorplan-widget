@@ -27,7 +27,7 @@
             "interior": "620 SQFT | 58 M2",
             "exterior": "149 SQFT | 14 M2",
             "total": "769 SQFT | 71 M2", 
-            "brochureUrl": "/src/assets/pdfs/palma/4-12/01.pdf"
+            "brochureUrl": "./4-12_01"
         },
         {
             "id": "4-12_02",
@@ -38,7 +38,7 @@
             "interior": "889 SQFT | 83 M2",
             "exterior": "291 SQFT | 27 M2",
             "total": "1,180 SQFT | 110 M2", 
-            "brochureUrl": "/src/assets/pdfs/palma/4-12/02.pdf"
+            "brochureUrl": "./4-12_02"
         },
         {
             "id": "4-12_03",
@@ -49,7 +49,7 @@
             "interior": "410 SQFT | 38 M2",
             "exterior": "58 SQFT | 5 M2",
             "total": "468 SQFT | 43 M2", 
-            "brochureUrl": "/src/assets/pdfs/palma/4-12/03.pdf"
+            "brochureUrl": "./4-12_03"
         },
         {
             "id": "4-12_04",
@@ -60,7 +60,7 @@
             "interior": "413 SQFT | 39 M2",
             "exterior": "150 SQFT | 14 M2",
             "total": "563 SQFT | 52 M2", 
-            "brochureUrl": "/src/assets/pdfs/palma/4-12/04.pdf"
+            "brochureUrl": "./4-12_04"
         },
         {
             "id": "4-12_05",
@@ -71,7 +71,7 @@
             "interior": "405 SQFT | 38 M2",
             "exterior": "90 SQFT | 8 M2",
             "total": "495 SQFT | 46 M2", 
-            "brochureUrl": "/src/assets/pdfs/palma/4-12/05.pdf"
+            "brochureUrl": "./4-12_05"
         },
         {
             "id": "4-12_06",
@@ -82,7 +82,7 @@
             "interior": "423 SQFT | 39 M2",
             "exterior": "151 SQFT | 14 M2",
             "total": "574 SQFT | 53 M2", 
-            "brochureUrl": "/src/assets/pdfs/palma/4-12/06.pdf"
+            "brochureUrl": "./4-12_06"
         },
         {
             "id": "4-12_07",
@@ -93,7 +93,7 @@
             "interior": "442 SQFT | 41 M2",
             "exterior": "99 SQFT | 9 M2",
             "total": "541 SQFT | 50 M2", 
-            "brochureUrl": "/src/assets/pdfs/palma/4-12/07.pdf"
+            "brochureUrl": "./4-12_07"
         },
         {
             "id": "4-12_08",
@@ -104,7 +104,7 @@
             "interior": "408 SQFT | 38 M2",
             "exterior": "140 SQFT | 13 M2",
             "total": "548 SQFT | 51 M2", 
-            "brochureUrl": "/src/assets/pdfs/palma/4-12/04.pdf"
+            "brochureUrl": "./4-12_04"
         },
         {
             "id": "4-12_09",
@@ -115,7 +115,7 @@
             "interior": "440 SQFT | 41 M2",
             "exterior": "102 SQFT | 9 M2",
             "total": "542 SQFT | 50 M2", 
-            "brochureUrl": "/src/assets/pdfs/palma/4-12/09.pdf"
+            "brochureUrl": "./4-12_09"
         },
         {
             "id": "4-12_10",
@@ -126,7 +126,7 @@
             "interior": "426 SQFT | 40 M2",
             "exterior": "135 SQFT | 12 M2",
             "total": "561 SQFT | 52 M2", 
-            "brochureUrl": "/src/assets/pdfs/palma/4-12/10.pdf"
+            "brochureUrl": "./4-12_10"
         },
         {
             "id": "4-12_11",
@@ -137,7 +137,7 @@
             "interior": "843 SQFT | 78 M2",
             "exterior": "243 SQFT | 23 M2",
             "total": "1,086 SQFT | 101 M2", 
-            "brochureUrl": "/src/assets/pdfs/palma/4-12/11.pdf"
+            "brochureUrl": "./4-12_11"
         },
         {
             "id": "4-12_12",
@@ -148,7 +148,7 @@
             "interior": "558 SQFT | 52 M2",
             "exterior": "201 SQFT | 19 M2",
             "total": "759 SQFT | 71 M2", 
-            "brochureUrl": "/src/assets/pdfs/palma/4-12/12.pdf"
+            "brochureUrl": "./4-12_12"
         }
     ]
 }

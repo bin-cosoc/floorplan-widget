@@ -41,17 +41,6 @@
 import useStore from '@/store.js';
 import Floor from './Floor.vue';
 
-async function getPDFs() {
-  const PDFS = import.meta.glob('@/**/*.pdf', { import: 'default' });
-  const promises = Object.entries(PDFS).map(async ([k,v])=>{
-      return [k, await v()];
-  });
-  
-  const data = await Promise.all(promises);
-  
-  return Object.fromEntries(data);
-}
-
 export default {
     components: {Floor},
     setup() {
@@ -59,18 +48,10 @@ export default {
             store: useStore()
         }
     },
-    data() {
-        return {
-            pdfs: {}
-        }
-    },
     computed: {
         pdfUrl() {
-            return this.pdfs[this.store.selected.brochureUrl];
+            return this.store.selected.brochureUrl;
         }
-    },
-    async mounted() {
-        this.pdfs = await getPDFs();
     }
 }
 </script>
