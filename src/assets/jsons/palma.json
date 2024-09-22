@@ -149,6 +149,195 @@
             "exterior": "201 SQFT | 19 M2",
             "total": "759 SQFT | 71 M2", 
             "brochureUrl": "./4-12_12"
+        },
+
+        {
+            "id": "3_301",
+            "title": "S2 / 301",
+            "level": "LEVELS 3",
+            "imgUrl": "/src/assets/imgs/palma/3/301.png",
+            "rooms": "Studio / One bath",
+            "interior": "416 SQFT | 39 M2",
+            "exterior": "0 SQFT | 0 M2",
+            "total": "416 SQFT | 39 M2", 
+            "brochureUrl": "./301"
+        },
+        {
+            "id": "3_302",
+            "title": "A9 / 302",
+            "level": "LEVELS 3",
+            "imgUrl": "/src/assets/imgs/palma/3/302.png",
+            "rooms": "One bed / One bath",
+            "interior": "573 SQFT | 53 M2",
+            "exterior": "0 SQFT | 0 M2",
+            "total": "573 SQFT | 53 M2", 
+            "brochureUrl": "./302"
+        },
+        {
+            "id": "3_303",
+            "title": "A2 / 303",
+            "level": "LEVELS 3",
+            "imgUrl": "/src/assets/imgs/palma/3/303.png",
+            "rooms": "One bed / One bath",
+            "interior": "575 SQFT | 53 M2",
+            "exterior": "0 SQFT | 0 M2",
+            "total": "575 SQFT | 53 M2", 
+            "brochureUrl": "./303"
+        },
+        {
+            "id": "3_304",
+            "title": "S1 / 304",
+            "level": "LEVELS 3",
+            "imgUrl": "/src/assets/imgs/palma/3/304.png",
+            "rooms": "One bed / One bath",
+            "interior": "421 SQFT | 39 M2",
+            "exterior": "0 SQFT | 0 M2",
+            "total": "421 SQFT | 39 M2", 
+            "brochureUrl": "./304"
+        },
+        {
+            "id": "3_305",
+            "title": "A3 / 305",
+            "level": "LEVELS 3",
+            "imgUrl": "/src/assets/imgs/palma/3/305.png",
+            "rooms": "One bed / One bath",
+            "interior": "555 SQFT | 52 M2",
+            "exterior": "0 SQFT | 0 M2",
+            "total": "555 SQFT | 52 M2", 
+            "brochureUrl": "./305"
+        },
+        {
+            "id": "3_307",
+            "title": "A2 / 307",
+            "level": "LEVELS 3",
+            "imgUrl": "/src/assets/imgs/palma/3/307.png",
+            "rooms": "One bed / One bath",
+            "interior": "561 SQFT | 52 M2",
+            "exterior": "0 SQFT | 0 M2",
+            "total": "561 SQFT | 52 M2", 
+            "brochureUrl": "./307"
+        },
+        {
+            "id": "3_308",
+            "title": "A3 / 308",
+            "level": "LEVELS 3",
+            "imgUrl": "/src/assets/imgs/palma/3/308.png",
+            "rooms": "One bed / One bath",
+            "interior": "561 SQFT | 52 M2",
+            "exterior": "0 SQFT | 0 M2",
+            "total": "575 SQFT | 52 M2", 
+            "brochureUrl": "./308"
+        },
+        {
+            "id": "3_309",
+            "title": "A8 / 309",
+            "level": "LEVELS 3",
+            "imgUrl": "/src/assets/imgs/palma/3/309.png",
+            "rooms": "One bed / One bath",
+            "interior": "553 SQFT | 51 M2",
+            "exterior": "0 SQFT | 0 M2",
+            "total": "553 SQFT | 51 M2", 
+            "brochureUrl": "./309"
+        },
+        {
+            "id": "3_310",
+            "title": "S3 / 310",
+            "level": "LEVELS 3",
+            "imgUrl": "/src/assets/imgs/palma/3/310.png",
+            "rooms": "Studio / One bath",
+            "interior": "459 SQFT | 43 M2",
+            "exterior": "0 SQFT | 0 M2",
+            "total": "459 SQFT | 43 M2", 
+            "brochureUrl": "./310"
+        },
+        {
+            "id": "3_311",
+            "title": "A4B / 311",
+            "level": "LEVELS 3",
+            "imgUrl": "/src/assets/imgs/palma/3/311.png",
+            "rooms": "One bed / One bath",
+            "interior": "556 SQFT | 52 M2",
+            "exterior": "89 SQFT | 8 M2",
+            "total": "654 SQFT | 61 M2", 
+            "brochureUrl": "./311"
+        },
+
+        {
+            "id": "PH_01",
+            "title": "PH-1",
+            "level": "PENTHOUSE",
+            "imgUrl": "/src/assets/imgs/palma/PH/PH1.png",
+            "rooms": "Two bed / Two bath",
+            "interior": "873 SQFT | 81 M2",
+            "exterior": "342 SQFT | 32 M2",
+            "total": "1,215 SQFT | 113 M2", 
+            "brochureUrl": "./ph1"
+        },
+        {
+            "id": "PH_02",
+            "title": "PH-2",
+            "level": "PENTHOUSE",
+            "imgUrl": "/src/assets/imgs/palma/PH/PH2.png",
+            "rooms": "Two bed / Two bath",
+            "interior": "889 SQFT | 83 M2",
+            "exterior": "352 SQFT | 33 M2",
+            "total": "1,241 SQFT | 115 M2", 
+            "brochureUrl": "./ph2"
+        },
+        {
+            "id": "PH_03",
+            "title": "PH-3",
+            "level": "PENTHOUSE",
+            "imgUrl": "/src/assets/imgs/palma/PH/PH3.png",
+            "rooms": "Two bed / Two bath",
+            "interior": "721 SQFT | 67 M2",
+            "exterior": "151 SQFT | 14 M2",
+            "total": "872 SQFT | 81 M2", 
+            "brochureUrl": "./ph3"
+        },
+        {
+            "id": "PH_04",
+            "title": "PH-4",
+            "level": "PENTHOUSE",
+            "imgUrl": "/src/assets/imgs/palma/PH/PH4.png",
+            "rooms": "One bed / One bath",
+            "interior": "414 SQFT | 38 M2",
+            "exterior": "191 SQFT | 18 M2",
+            "total": "605 SQFT | 56 M2", 
+            "brochureUrl": "./ph4"
+        },
+        {
+            "id": "PH_05",
+            "title": "PH-5",
+            "level": "PENTHOUSE",
+            "imgUrl": "/src/assets/imgs/palma/PH/PH5.png",
+            "rooms": "One bed / One bath",
+            "interior": "548 SQFT | 51 M2",
+            "exterior": "140 SQFT | 13 M2",
+            "total": "688 SQFT | 64 M2", 
+            "brochureUrl": "./ph5"
+        },
+        {
+            "id": "PH_06",
+            "title": "PH-6",
+            "level": "PENTHOUSE",
+            "imgUrl": "/src/assets/imgs/palma/PH/PH6.png",
+            "rooms": "Two bed / Two bath",
+            "interior": "834 SQFT | 77 M2",
+            "exterior": "370 SQFT | 34 M2",
+            "total": "1,204 SQFT | 112 M2", 
+            "brochureUrl": "./ph6"
+        },
+        {
+            "id": "PH_07",
+            "title": "PH-7",
+            "level": "PENTHOUSE",
+            "imgUrl": "/src/assets/imgs/palma/PH/PH7.png",
+            "rooms": "Two bed / Two bath",
+            "interior": "1,342 SQFT | 125 M2",
+            "exterior": "1,287 SQFT | 120 M2",
+            "total": "2,629 SQFT | 244 M2", 
+            "brochureUrl": "./ph7"
         }
     ]
 }
