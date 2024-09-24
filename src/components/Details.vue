@@ -9,7 +9,7 @@
             <p><b>Total:</b> {{ store.selected.total }}</p>
         </div>
         <a v-if="pdfUrl" id="downloadButton" :href="pdfUrl" :download="pdfName">
-            DOWNLOAD FLOOR PLAN
+            DOWNLOAD FLOOR PLAN  →
         </a>
     </div>
 </template>
