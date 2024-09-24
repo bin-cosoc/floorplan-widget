@@ -7336,7 +7336,7 @@ function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
       id: "downloadButton",
       href: $options.pdfUrl,
       download: $options.pdfName
-    }, " DOWNLOAD FLOOR PLAN ", 8, _hoisted_6)) : createCommentVNode("", true)
+    }, " DOWNLOAD FLOOR PLAN → ", 8, _hoisted_6)) : createCommentVNode("", true)
   ]);
 }
 const Details = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render$3]]);
@@ -7353,8 +7353,8 @@ function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_Floor = resolveComponent("Floor");
   const _component_Details = resolveComponent("Details");
   return openBlock(), createElementBlock("aside", null, [
+    _cache[0] || (_cache[0] = createBaseVNode("h2", null, "FLOOR PLANS", -1)),
     createBaseVNode("div", _hoisted_1$2, [
-      _cache[0] || (_cache[0] = createBaseVNode("h2", null, "FLOOR PLANS", -1)),
       (openBlock(), createBlock(Suspense, null, {
         default: withCtx(() => [
           (openBlock(true), createElementBlock(Fragment, null, renderList(_ctx.$floorplan.floors, (data) => {

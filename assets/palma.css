@@ -11,6 +11,8 @@
         & h2 {
             margin-top: 0;
             margin-bottom: 24px;
+            color: #9E8E82;
+            font-size: 48px;
         }
 
         & details {
@@ -22,7 +24,8 @@
                 list-style: none;
                 color: #9E8E82;
                 cursor: pointer;
-                font-size: 24px;
+                font-size: 20px;
+                font-weight: bold;
 
                 &::-webkit-details-marker {
                     display: none;
@@ -40,12 +43,15 @@
         & .title {
             margin-top: 0px;
             margin-bottom: 12px;
+            color: #7B9386;
         }
 
         & .level,
         & .rooms {
             margin-top: 0px;
             margin-bottom: 24px;
+            color: #7B9386;
+            width: 389px;
         }
 
         & .total {
@@ -58,14 +64,47 @@
             margin-top: 60px;
             text-transform: uppercase;
             padding: 12px 24px;
-            border: 1px solid #9E8E82;
+            border: 1px solid #7B9386;
             transition: color 200ms, background-color 200ms;
             text-align: center;
             justify-content: center;
+            font-size: 16px;
+            width: 219px;
+            height: 24px;
+            font-family: 'Montserrat', sans-serif;
+            color: #7B9386;
+            font-weight: bold;
+            text-decoration: none;
+            white-space: nowrap;
 
             &:hover {
                 background-color: #9E8E82;
                 color: #FFFFFF;
+            }
+        }
+
+        & #residenceInfo {
+            & .title {
+                font-size: 36px;
+                width: 389px;
+                height: 36px;
+            }
+
+            & .level {
+                font-size: 20px;
+                width: 389px;
+                height: 24px;
+            }
+
+            & .rooms {
+                font-size: 18px;
+                width: 389px;
+                height: 24px;
+            }
+
+            & p {
+                font-size: 16px;
+                color: #7B9386;
             }
         }
     }
@@ -81,6 +120,8 @@
             margin-right: auto;
             margin-bottom: 48px;
             margin-top: 0;
+            font-size: 36px;
+            color: #7B9386;
         }
 
         & .container {
@@ -120,21 +161,72 @@
         display: none;
     }
 
-    .not-in-mobile{
+    .not-in-mobile {
         display: block;
     }
-    
+
     @media (max-width: 1024px) {
         display: flex;
         flex-direction: column;
 
-        & aside {
+        aside {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
             gap: 64px;
+            padding: 20px;
+
+            h2 {
+                grid-column: span 2;
+            }
+
+            #residenceInfo {
+                & .title {
+                    font-size: 32px;
+                    color: #7B705E;
+                }
+
+                & .level {
+                    font-size: 20px;
+                    color: #7B705E;
+                }
+
+                & p.rooms
+                 {
+                    font-size: 20px;
+                    color: #7B705E;
+                }
+
+                &  p:not(.rooms) {
+                    font-size: 18px;
+                    color: #7B705E;
+                }
+            }
         }
 
-        & .viewer .container img {
+        .floorplan-container {
+            h2 {
+                font-size: 42px;
+            }
+
+            details summary {
+                color: #7B705E;
+                font-family: 'F37 Bergman', sans-serif;
+            }
+
+        }
+
+        .residence-info-container #downloadButton {
+            color: #9E8E82;
+            border: 1px solid #9E8E82;
+            white-space: nowrap;
+        }
+
+        .viewer h3{
+            font-size: 36px;
+            color:#7B705E;
+        }
+
+        .viewer .container img {
             position: static;
         }
     }
@@ -147,10 +239,15 @@
         .not-in-mobile {
             display: none;
         }
-        
+
         & aside {
             gap: 16px;
             grid-template-columns: repeat(2, minmax(0, 1fr));
+
+            h2 {
+                color:#9E614F;
+                font-family: 'F37 Bergman', sans-serif;
+            }
 
             & .floorplan-container {
                 grid-column: 2 span / 2 span;
@@ -160,9 +257,54 @@
                 margin-bottom: 0px;
             }
         }
+
+        #residenceInfo {
+            & .title {
+                font-size: 23px;
+                color: #7B705E;
+            }
+
+            & .level {
+                font-size: 20px;
+                color: #7B705E;
+            }
+
+            & p.rooms
+             {
+                font-size: 18px;
+                color: #7B705E;
+            }
+
+            &  p:not(.rooms) {
+                font-size: 18px;
+                color: #7B705E;
+            }
+        }
+
+        .viewer h3{
+            font-size: 23px;
+            color:#7B705E;
+        }
+
+        .residence-info-container #downloadButton {
+            color: #9E8E82;
+            border: 1px solid #9E8E82;
+            white-space: nowrap;
+            display: flex;
+            text-transform: uppercase;
+            padding: 8px 16px;
+            border: 1px solid #9E8E82;
+            transition: color 200ms, background-color 200ms;
+            text-align: center;
+            justify-content: center;
+            font-size: 16px;
+            width: 219px;
+            height: 24px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            text-decoration: none;
+        }
     }
 
-   
+
 }
-
-
