@@ -1,8 +1,8 @@
-import { createApp } from 'vue'
-import { createPinia } from 'pinia';
-import '@/style.css'
-import App from '@/App.vue'
+import App from '@/App.vue';
+import '@/assets/css/palma.css';
 import Data from '@/assets/jsons/palma.json';
+import { createPinia } from 'pinia';
+import { createApp } from 'vue';
 
 const app = createApp(App);
 const pinia = createPinia();

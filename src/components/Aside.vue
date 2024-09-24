@@ -1,7 +1,7 @@
 <template>
     <aside>
-        <div class="floorplan-container">
-            <h2>FLOOR PLANS</h2>
+        <h2>FLOOR PLANS</h2>
+            <div class="floorplan-container">
             <Suspense>
                 <Floor 
                     :id="data.id"
@@ -11,7 +11,7 @@
                 />
             </Suspense>
         </div>
-        <Details class="not-in-mobile" />
+        <Details class="not-in-mobile" /> 
     </aside>
     
 </template>
