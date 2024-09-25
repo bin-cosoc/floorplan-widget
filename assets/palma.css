@@ -66,7 +66,7 @@
             transition: color 200ms, background-color 200ms;
             text-align: center;
             justify-content: center;
-            align-items: flex-start;
+            align-self: flex-start;
             font-size: 16px;
             font-family: 'Montserrat', sans-serif;
             color: #7B9386;
@@ -182,31 +182,27 @@
 
             #residenceInfo {
                 & .title {
-                    font-size: 32px;
-                    color: #7B705E;
+                    font-size: 30px;
                 }
 
                 & .level {
-                    font-size: 20px;
-                    color: #7B705E;
+                    font-size: 18px;
                 }
 
                 & p.rooms
                  {
-                    font-size: 20px;
-                    color: #7B705E;
+                    font-size: 16px;
                 }
 
                 &  p:not(.rooms) {
-                    font-size: 18px;
-                    color: #7B705E;
+                    font-size: 14px;
                 }
             }
         }
 
         .floorplan-container {
             h2 {
-                font-size: 42px;
+                font-size: 36px;
             }
 
         }
