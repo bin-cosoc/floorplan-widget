@@ -80,7 +80,8 @@
             }
         }
 
-        & #residenceInfo {
+        & #residenceInfo,
+        & .mobile-only #residenceInfo {
 
             color: #7B9386;
             
@@ -236,6 +237,7 @@
 
             h2 {
                 font-size: 2rem;
+                margin-bottom: 0;
             }
 
             & .floorplan-container {
