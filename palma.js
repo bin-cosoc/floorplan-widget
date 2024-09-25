@@ -7215,7 +7215,7 @@ const _export_sfc = (sfc, props) => {
   return target;
 };
 async function getSVG(url) {
-  const SVGS = /* @__PURE__ */ Object.assign({ "/src/assets/imgs/palma/3/floor.svg": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/floor-BKRZ0tMK.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/imgs/palma/4-12/floor.svg": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/floor-55EOC1p9.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/imgs/palma/PH/floor.svg": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/floor-BK7dVeM7.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/vue.svg": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/vue-CREnz8aj.js"), true ? [] : void 0).then((m) => m["default"]) });
+  const SVGS = /* @__PURE__ */ Object.assign({ "/src/assets/imgs/palma/3/floor.svg": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/floor-C4V5TkHp.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/imgs/palma/4-12/floor.svg": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/floor-55EOC1p9.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/imgs/palma/PH/floor.svg": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/floor-BK7dVeM7.js"), true ? [] : void 0).then((m) => m["default"]), "/src/assets/vue.svg": () => __vitePreload(() => import("https://lordfitoi.github.io/floorplan-widget/assets/vue-CREnz8aj.js"), true ? [] : void 0).then((m) => m["default"]) });
   return await SVGS[url]();
 }
 const _sfc_main$4 = {
