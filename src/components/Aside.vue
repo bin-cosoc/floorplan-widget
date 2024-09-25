@@ -2,6 +2,7 @@
     <aside>
         <h2>FLOOR PLANS</h2>
             <div class="floorplan-container">
+            <p style="color: #9E8E82; margin-bottom: 2rem; font-size: 85%;">Please select the residence from the floor plate to view detailed floor plan.</p>
             <Suspense>
                 <Floor 
                     :id="data.id"
