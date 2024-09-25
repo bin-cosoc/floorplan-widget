@@ -252,17 +252,19 @@
             }
             
             & .title {
-                font-size: 22px;
+                font-size: 24px;
             }
 
             & .level {
-                font-size: 18px;
+                font-size: 16px;
                 font-family: 'Montserrat', sans-serif;
+                margin-bototm: 1em;
             }
 
             & p.rooms
              {
                 font-size: 16px;
+                margin-bototm: 1em;
             }
 
             &  p:not(.rooms) {
