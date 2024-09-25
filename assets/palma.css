@@ -270,8 +270,9 @@
             &  p:not(.rooms) {
                 font-size: 14px;
             }
+        }
 
-            & #downloadButton {
+       #downloadButton {
             display: flex;
             margin: 0px;
             margin-top: 36px;
@@ -294,7 +295,6 @@
                 color: #FFFFFF;
             }
             }
-        }
 
         .viewer h3{
             font-size: 24px;
