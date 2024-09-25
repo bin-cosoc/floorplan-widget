@@ -269,7 +269,7 @@
                 font-size: 14px;
             }
 
-            & a[download] {
+            & a[downloadButton] {
             display: flex;
             margin: 0px;
             margin-top: 36px;
@@ -292,6 +292,7 @@
                 color: #FFFFFF;
             }
                 
+        }
         }
 
         .viewer h3{
