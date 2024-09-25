@@ -81,6 +81,9 @@
         }
 
         & #residenceInfo {
+
+            color: #7B9386;
+            
             & .title {
                 font-size: 2.25rem;
                 line-height: 1em;
@@ -168,11 +171,13 @@
         aside {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 64px;
+            column-gap: 4rem;
+            row-gap: 2rem;
             padding: 20px;
 
             h2 {
                 grid-column: span 2;
+                font-size: 2.5rem;
             }
 
             #residenceInfo {
@@ -202,11 +207,6 @@
         .floorplan-container {
             h2 {
                 font-size: 42px;
-            }
-
-            details summary {
-                color: #7B705E;
-                font-family: 'F37 Bergman', sans-serif;
             }
 
         }
