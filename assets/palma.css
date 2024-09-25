@@ -258,20 +258,20 @@
             & .level {
                 font-size: 16px;
                 font-family: 'Montserrat', sans-serif;
-                margin-bototm: 1em;
+                margin-bottom: 1em;
             }
 
             & p.rooms
              {
                 font-size: 16px;
-                margin-bototm: 1em;
+                margin-bottom: 1em;
             }
 
             &  p:not(.rooms) {
                 font-size: 14px;
             }
 
-            & a[downloadButton] {
+            & #downloadButton {
             display: flex;
             margin: 0px;
             margin-top: 36px;
@@ -293,8 +293,7 @@
                 background-color: #A8A195;
                 color: #FFFFFF;
             }
-                
-        }
+            }
         }
 
         .viewer h3{
