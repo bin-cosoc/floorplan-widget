@@ -59,7 +59,7 @@
         & a[download] {
             display: flex;
             margin: 0px;
-            margin-top: 60px;
+            margin-top: 48px;
             text-transform: uppercase;
             padding: 12px 24px;
             border: 1px solid #7B9386;
@@ -67,6 +67,7 @@
             text-align: center;
             justify-content: center;
             align-self: flex-start;
+            width: auto;
             font-size: 16px;
             font-family: 'Montserrat', sans-serif;
             color: #7B9386;
@@ -75,7 +76,7 @@
             font-weight: 500;
 
             &:hover {
-                background-color: #9E8E82;
+                background-color: #A8A195;
                 color: #FFFFFF;
             }
         }
@@ -267,6 +268,30 @@
             &  p:not(.rooms) {
                 font-size: 14px;
             }
+
+            & a[download] {
+            display: flex;
+            margin: 0px;
+            margin-top: 36px;
+            text-transform: uppercase;
+            padding: 12px 24px;
+            border: 1px solid #7B9386;
+            transition: color 200ms, background-color 200ms;
+            text-align: center;
+            justify-content: center;
+            align-self: flex-start;
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+            color: #7B9386;
+            text-decoration: none;
+            white-space: nowrap;
+            font-weight: 500;
+
+            &:hover {
+                background-color: #A8A195;
+                color: #FFFFFF;
+            }
+                
         }
 
         .viewer h3{
