@@ -81,7 +81,7 @@
         }
 
         & #residenceInfo,
-        & .mobile-only #residenceInfo {
+        & .mobile-only#residenceInfo {
 
             color: #7B9386;
             
@@ -178,6 +178,7 @@
             h2 {
                 grid-column: span 2;
                 font-size: 2.5rem;
+                margin-bottom: 0;
             }
 
             #residenceInfo {
@@ -207,14 +208,9 @@
 
         }
 
-        .residence-info-container #downloadButton {
-            color: #9E8E82;
-            border: 1px solid #9E8E82;
-            white-space: nowrap;
-        }
-
         .viewer h3{
             font-size: 36px;
+            margin-bottom: 32px;
         }
 
         .viewer .container img {
@@ -237,7 +233,6 @@
 
             h2 {
                 font-size: 2rem;
-                margin-bottom: 0;
             }
 
             & .floorplan-container {
@@ -256,6 +251,7 @@
 
             & .level {
                 font-size: 18px;
+                font-family: 'Montserrat', sans-serif;
             }
 
             & p.rooms
@@ -270,6 +266,7 @@
 
         .viewer h3{
             font-size: 24px;
+            margin-bottom: 24px;
         }
     }
 
