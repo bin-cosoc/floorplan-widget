@@ -80,8 +80,7 @@
             }
         }
 
-        & #residenceInfo,
-        & .mobile-only#residenceInfo {
+        & #residenceInfo {
 
             color: #7B9386;
             
@@ -245,6 +244,12 @@
         }
 
         #residenceInfo {
+            color: #7B9386;
+
+            > * {
+                margin-bottom: 0.5em;
+            }
+            
             & .title {
                 font-size: 22px;
             }
