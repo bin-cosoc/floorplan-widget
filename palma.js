@@ -7599,7 +7599,6 @@ const residences = [
     imgUrl: "/src/assets/imgs/palma/3/301.png",
     rooms: "Studio / 1 Bathroom",
     interior: "416 SQ.FT. | 39 SQ.M.",
-    exterior: "0 SQ.FT. | 0 SQ.M.",
     total: "416 SQ.FT. | 39 SQ.M.",
     brochureUrl: "./301"
   },
@@ -7610,7 +7609,6 @@ const residences = [
     imgUrl: "/src/assets/imgs/palma/3/302.png",
     rooms: "1 Bedroom / 1 Bathroom",
     interior: "573 SQ.FT. | 53 SQ.M.",
-    exterior: "0 SQ.FT. | 0 SQ.M.",
     total: "573 SQ.FT. | 53 SQ.M.",
     brochureUrl: "./302"
   },
@@ -7621,7 +7619,6 @@ const residences = [
     imgUrl: "/src/assets/imgs/palma/3/303.png",
     rooms: "1 Bedroom / 1 Bathroom",
     interior: "575 SQ.FT. | 53 SQ.M.",
-    exterior: "0 SQ.FT. | 0 SQ.M.",
     total: "575 SQ.FT. | 53 SQ.M.",
     brochureUrl: "./303"
   },
@@ -7632,7 +7629,6 @@ const residences = [
     imgUrl: "/src/assets/imgs/palma/3/304.png",
     rooms: "1 Bedroom / 1 Bathroom",
     interior: "421 SQ.FT. | 39 SQ.M.",
-    exterior: "0 SQ.FT. | 0 SQ.M.",
     total: "421 SQ.FT. | 39 SQ.M.",
     brochureUrl: "./304"
   },
@@ -7643,7 +7639,6 @@ const residences = [
     imgUrl: "/src/assets/imgs/palma/3/305.png",
     rooms: "1 Bedroom / 1 Bathroom",
     interior: "555 SQ.FT. | 52 SQ.M.",
-    exterior: "0 SQ.FT. | 0 SQ.M.",
     total: "555 SQ.FT. | 52 SQ.M.",
     brochureUrl: "./305"
   },
@@ -7654,7 +7649,6 @@ const residences = [
     imgUrl: "/src/assets/imgs/palma/3/307.png",
     rooms: "1 Bedroom / 1 Bathroom",
     interior: "561 SQ.FT. | 52 SQ.M.",
-    exterior: "0 SQ.FT. | 0 SQ.M.",
     total: "561 SQ.FT. | 52 SQ.M.",
     brochureUrl: "./307"
   },
@@ -7665,7 +7659,6 @@ const residences = [
     imgUrl: "/src/assets/imgs/palma/3/308.png",
     rooms: "1 Bedroom / 1 Bathroom",
     interior: "561 SQ.FT. | 52 SQ.M.",
-    exterior: "0 SQ.FT. | 0 SQ.M.",
     total: "575 SQ.FT. | 52 SQ.M.",
     brochureUrl: "./308"
   },
@@ -7676,7 +7669,6 @@ const residences = [
     imgUrl: "/src/assets/imgs/palma/3/309.png",
     rooms: "1 Bedroom / 1 Bathroom",
     interior: "553 SQ.FT. | 51 SQ.M.",
-    exterior: "0 SQ.FT. | 0 SQ.M.",
     total: "553 SQ.FT. | 51 SQ.M.",
     brochureUrl: "./309"
   },
@@ -7687,7 +7679,6 @@ const residences = [
     imgUrl: "/src/assets/imgs/palma/3/310.png",
     rooms: "Studio / 1 Bathroom",
     interior: "459 SQ.FT. | 43 SQ.M.",
-    exterior: "0 SQ.FT. | 0 SQ.M.",
     total: "459 SQ.FT. | 43 SQ.M.",
     brochureUrl: "./310"
   },
