@@ -7354,6 +7354,7 @@ function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_Details = resolveComponent("Details");
   return openBlock(), createElementBlock("aside", null, [
     _cache[0] || (_cache[0] = createBaseVNode("h2", null, "FLOOR PLANS", -1)),
+    _cache[1] || (_cache[1] = createBaseVNode("p", null, "Please select the residence from the floor plate to view detailed floor plan.", -1)),
     createBaseVNode("div", _hoisted_1$2, [
       (openBlock(), createBlock(Suspense, null, {
         default: withCtx(() => [
