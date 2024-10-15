@@ -7355,7 +7355,7 @@ function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("aside", null, [
     _cache[1] || (_cache[1] = createBaseVNode("h2", null, "FLOOR PLANS", -1)),
     createBaseVNode("div", _hoisted_1$2, [
-      _cache[0] || (_cache[0] = createBaseVNode("p", { class: "instruction" }, "Please select the residence from the floor plate to view detailed floor plan.", -1)),
+      _cache[0] || (_cache[0] = createBaseVNode("p", { style: { "color": "#9E8E82", "margin-bottom": "2rem", "font-size": "85%" } }, "Please select the residence from the floor plate to view detailed floor plan.", -1)),
       (openBlock(), createBlock(Suspense, null, {
         default: withCtx(() => [
           (openBlock(true), createElementBlock(Fragment, null, renderList(_ctx.$floorplan.floors, (data) => {
