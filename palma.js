@@ -7311,7 +7311,8 @@ const _hoisted_2$1 = { id: "residenceInfo" };
 const _hoisted_3$1 = { class: "title" };
 const _hoisted_4$1 = { class: "level" };
 const _hoisted_5 = { class: "rooms" };
-const _hoisted_6 = ["href", "download"];
+const _hoisted_6 = { key: 0 };
+const _hoisted_7 = ["href", "download"];
 function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("div", _hoisted_1$3, [
     createBaseVNode("div", _hoisted_2$1, [
@@ -7322,10 +7323,10 @@ function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
         _cache[0] || (_cache[0] = createBaseVNode("b", null, "Interior:", -1)),
         createTextVNode(" " + toDisplayString($setup.store.selected.interior), 1)
       ]),
-      createBaseVNode("p", null, [
+      $setup.store.selected.exterior ? (openBlock(), createElementBlock("p", _hoisted_6, [
         _cache[1] || (_cache[1] = createBaseVNode("b", null, "Exterior:", -1)),
         createTextVNode(" " + toDisplayString($setup.store.selected.exterior), 1)
-      ]),
+      ])) : createCommentVNode("", true),
       createBaseVNode("p", null, [
         _cache[2] || (_cache[2] = createBaseVNode("b", null, "Total:", -1)),
         createTextVNode(" " + toDisplayString($setup.store.selected.total), 1)
@@ -7336,7 +7337,7 @@ function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
       id: "downloadButton",
       href: $options.pdfUrl,
       download: $options.pdfName
-    }, " DOWNLOAD FLOOR PLAN → ", 8, _hoisted_6)) : createCommentVNode("", true)
+    }, " DOWNLOAD FLOOR PLAN → ", 8, _hoisted_7)) : createCommentVNode("", true)
   ]);
 }
 const Details = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render$3]]);
