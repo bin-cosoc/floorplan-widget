@@ -7297,11 +7297,18 @@ const _sfc_main$3 = {
       store: useStore()
     };
   },
+  data() {
+    return {
+      wordpressRootUrl: window.wpApiSettings
+    };
+  },
   computed: {
-    pdfUrl() {
+    baseUrl() {
       var _a, _b;
-      const baseUrl = ((_b = (_a = window.wpApiSettings) == null ? void 0 : _a.root) == null ? void 0 : _b.replace("/wp-json/", "")) || "";
-      return baseUrl + this.store.selected.brochureUrl;
+      return ((_b = (_a = this.wordpressRootUrl) == null ? void 0 : _a.root) == null ? void 0 : _b.replace("/wp-json/", "")) || "";
+    },
+    pdfUrl() {
+      return this.baseUrl() + this.store.selected.brochureUrl;
     },
     pdfName() {
       return `FloorPlan_${this.store.selected.id}.pdf`;
