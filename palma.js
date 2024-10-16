@@ -7293,15 +7293,15 @@ function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
 const Floor = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render$4]]);
 const _sfc_main$3 = {
   setup() {
-    var _a, _b;
     return {
-      store: useStore(),
-      baseUrl: ((_b = (_a = window.wpApiSettings) == null ? void 0 : _a.root) == null ? void 0 : _b.replace("/wp-json/", "")) || ""
+      store: useStore()
     };
   },
   computed: {
     pdfUrl() {
-      return this.baseUrl + this.store.selected.brochureUrl;
+      var _a, _b;
+      const baseUrl = ((_b = (_a = window.wpApiSettings) == null ? void 0 : _a.root) == null ? void 0 : _b.replace("/wp-json/", "")) || "";
+      return baseUrl + this.store.selected.brochureUrl;
     },
     pdfName() {
       return `FloorPlan_${this.store.selected.id}.pdf`;
