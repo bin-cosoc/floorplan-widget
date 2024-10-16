@@ -25,13 +25,23 @@ export default {
             store: useStore()
         }
     },
+    data() {
+        return {
+            baseUrl: "",
+        }
+    },
     computed: {
         pdfUrl() {
-            return this.store.selected.brochureUrl;
+            return this.baseUrl + this.store.selected.brochureUrl;
         },
         pdfName() {
             return `FloorPlan_${this.store.selected.id}.pdf`;
         }
+    },
+    mounted() {
+        window.addEventListener('load', () => {
+            this.baseUrl = window.wpApiSettings?.root?.replace('/wp-json/', '') || '';
+        })
     }
 }
 </script>
