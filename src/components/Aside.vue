@@ -13,8 +13,7 @@
             </Suspense>
         </div>
         <Details class="not-in-mobile" /> 
-    </aside>
-    
+    </aside>    
 </template>
 <script>
 import useStore from '@/store.js';

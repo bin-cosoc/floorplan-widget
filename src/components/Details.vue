@@ -5,7 +5,9 @@
             <h4 class="level">{{ store.selected.level }}</h4>
             <p class="rooms">{{ store.selected.rooms }}</p>
             <p><b>Interior:</b> {{ store.selected.interior }}</p>
-            <p><b>Exterior:</b> {{ store.selected.exterior }}</p>
+            <p v-if="store.selected.exterior">
+                <b>Exterior:</b> {{ store.selected.exterior }}
+            </p>
             <p><b>Total:</b> {{ store.selected.total }}</p>
         </div>
         <a v-if="pdfUrl" id="downloadButton" :href="pdfUrl" :download="pdfName">
