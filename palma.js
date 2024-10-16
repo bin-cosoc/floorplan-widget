@@ -7293,10 +7293,10 @@ function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
 const Floor = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render$4]]);
 const _sfc_main$3 = {
   setup() {
-    var _a;
+    var _a, _b;
     return {
       store: useStore(),
-      baseUrl: ((_a = wpApiSettings == null ? void 0 : wpApiSettings.root) == null ? void 0 : _a.replace("/wp-json/", "")) || ""
+      baseUrl: ((_b = (_a = window.wpApiSettings) == null ? void 0 : _a.root) == null ? void 0 : _b.replace("/wp-json/", "")) || ""
     };
   },
   computed: {
