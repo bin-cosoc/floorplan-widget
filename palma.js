@@ -7293,13 +7293,15 @@ function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
 const Floor = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render$4]]);
 const _sfc_main$3 = {
   setup() {
+    var _a;
     return {
-      store: useStore()
+      store: useStore(),
+      baseUrl: ((_a = wpApiSettings == null ? void 0 : wpApiSettings.root) == null ? void 0 : _a.replace("/wp-json/", "")) || ""
     };
   },
   computed: {
     pdfUrl() {
-      return this.store.selected.brochureUrl;
+      return this.baseUrl + this.store.selected.brochureUrl;
     },
     pdfName() {
       return `FloorPlan_${this.store.selected.id}.pdf`;
@@ -7471,7 +7473,7 @@ const residences = [
     interior: "620 SQ.FT. | 58 SQ.M.",
     exterior: "149 SQ.FT. | 14 SQ.M.",
     total: "769 SQ.FT. | 71 SQ.M.",
-    brochureUrl: "./4-12_01"
+    brochureUrl: "/4-12_01"
   },
   {
     id: "4-12_02",
@@ -7482,7 +7484,7 @@ const residences = [
     interior: "889 SQ.FT. | 83 SQ.M.",
     exterior: "291 SQ.FT. | 27 SQ.M.",
     total: "1,180 SQ.FT. | 110 SQ.M.",
-    brochureUrl: "./4-12_02"
+    brochureUrl: "/4-12_02"
   },
   {
     id: "4-12_03",
@@ -7493,7 +7495,7 @@ const residences = [
     interior: "410 SQ.FT. | 38 SQ.M.",
     exterior: "58 SQ.FT. | 5 SQ.M.",
     total: "468 SQ.FT. | 43 SQ.M.",
-    brochureUrl: "./4-12_03"
+    brochureUrl: "/4-12_03"
   },
   {
     id: "4-12_04",
@@ -7504,7 +7506,7 @@ const residences = [
     interior: "413 SQ.FT. | 39 SQ.M.",
     exterior: "150 SQ.FT. | 14 SQ.M.",
     total: "563 SQ.FT. | 52 SQ.M.",
-    brochureUrl: "./4-12_04"
+    brochureUrl: "/4-12_04"
   },
   {
     id: "4-12_05",
@@ -7515,7 +7517,7 @@ const residences = [
     interior: "405 SQ.FT. | 38 SQ.M.",
     exterior: "90 SQ.FT. | 8 SQ.M.",
     total: "495 SQ.FT. | 46 SQ.M.",
-    brochureUrl: "./4-12_05"
+    brochureUrl: "/4-12_05"
   },
   {
     id: "4-12_06",
@@ -7526,7 +7528,7 @@ const residences = [
     interior: "423 SQ.FT. | 39 SQ.M.",
     exterior: "151 SQ.FT. | 14 SQ.M.",
     total: "574 SQ.FT. | 53 SQ.M.",
-    brochureUrl: "./4-12_06"
+    brochureUrl: "/4-12_06"
   },
   {
     id: "4-12_07",
@@ -7537,7 +7539,7 @@ const residences = [
     interior: "442 SQ.FT. | 41 SQ.M.",
     exterior: "99 SQ.FT. | 9 SQ.M.",
     total: "541 SQ.FT. | 50 SQ.M.",
-    brochureUrl: "./4-12_07"
+    brochureUrl: "/4-12_07"
   },
   {
     id: "4-12_08",
@@ -7548,7 +7550,7 @@ const residences = [
     interior: "408 SQ.FT. | 38 SQ.M.",
     exterior: "140 SQ.FT. | 13 SQ.M.",
     total: "548 SQ.FT. | 51 SQ.M.",
-    brochureUrl: "./4-12_04"
+    brochureUrl: "/4-12_04"
   },
   {
     id: "4-12_09",
@@ -7559,7 +7561,7 @@ const residences = [
     interior: "440 SQ.FT. | 41 SQ.M.",
     exterior: "102 SQ.FT. | 9 SQ.M.",
     total: "542 SQ.FT. | 50 SQ.M.",
-    brochureUrl: "./4-12_09"
+    brochureUrl: "/4-12_09"
   },
   {
     id: "4-12_10",
@@ -7570,7 +7572,7 @@ const residences = [
     interior: "426 SQ.FT. | 40 SQ.M.",
     exterior: "135 SQ.FT. | 12 SQ.M.",
     total: "561 SQ.FT. | 52 SQ.M.",
-    brochureUrl: "./4-12_10"
+    brochureUrl: "/4-12_10"
   },
   {
     id: "4-12_11",
@@ -7581,7 +7583,7 @@ const residences = [
     interior: "843 SQ.FT. | 78 SQ.M.",
     exterior: "243 SQ.FT. | 23 SQ.M.",
     total: "1,086 SQ.FT. | 101 SQ.M.",
-    brochureUrl: "./4-12_11"
+    brochureUrl: "/4-12_11"
   },
   {
     id: "4-12_12",
@@ -7592,7 +7594,7 @@ const residences = [
     interior: "558 SQ.FT. | 52 SQ.M.",
     exterior: "201 SQ.FT. | 19 SQ.M.",
     total: "759 SQ.FT. | 71 SQ.M.",
-    brochureUrl: "./4-12_12"
+    brochureUrl: "/4-12_12"
   },
   {
     id: "3_301",
@@ -7602,7 +7604,7 @@ const residences = [
     rooms: "Studio / 1 Bathroom",
     interior: "416 SQ.FT. | 39 SQ.M.",
     total: "416 SQ.FT. | 39 SQ.M.",
-    brochureUrl: "./301"
+    brochureUrl: "/301"
   },
   {
     id: "3_302",
@@ -7612,7 +7614,7 @@ const residences = [
     rooms: "1 Bedroom / 1 Bathroom",
     interior: "573 SQ.FT. | 53 SQ.M.",
     total: "573 SQ.FT. | 53 SQ.M.",
-    brochureUrl: "./302"
+    brochureUrl: "/302"
   },
   {
     id: "3_303",
@@ -7622,7 +7624,7 @@ const residences = [
     rooms: "1 Bedroom / 1 Bathroom",
     interior: "575 SQ.FT. | 53 SQ.M.",
     total: "575 SQ.FT. | 53 SQ.M.",
-    brochureUrl: "./303"
+    brochureUrl: "/303"
   },
   {
     id: "3_304",
@@ -7632,7 +7634,7 @@ const residences = [
     rooms: "1 Bedroom / 1 Bathroom",
     interior: "421 SQ.FT. | 39 SQ.M.",
     total: "421 SQ.FT. | 39 SQ.M.",
-    brochureUrl: "./304"
+    brochureUrl: "/304"
   },
   {
     id: "3_305",
@@ -7642,7 +7644,7 @@ const residences = [
     rooms: "1 Bedroom / 1 Bathroom",
     interior: "555 SQ.FT. | 52 SQ.M.",
     total: "555 SQ.FT. | 52 SQ.M.",
-    brochureUrl: "./305"
+    brochureUrl: "/305"
   },
   {
     id: "3_307",
@@ -7652,7 +7654,7 @@ const residences = [
     rooms: "1 Bedroom / 1 Bathroom",
     interior: "561 SQ.FT. | 52 SQ.M.",
     total: "561 SQ.FT. | 52 SQ.M.",
-    brochureUrl: "./307"
+    brochureUrl: "/307"
   },
   {
     id: "3_308",
@@ -7662,7 +7664,7 @@ const residences = [
     rooms: "1 Bedroom / 1 Bathroom",
     interior: "561 SQ.FT. | 52 SQ.M.",
     total: "575 SQ.FT. | 52 SQ.M.",
-    brochureUrl: "./308"
+    brochureUrl: "/308"
   },
   {
     id: "3_309",
@@ -7672,7 +7674,7 @@ const residences = [
     rooms: "1 Bedroom / 1 Bathroom",
     interior: "553 SQ.FT. | 51 SQ.M.",
     total: "553 SQ.FT. | 51 SQ.M.",
-    brochureUrl: "./309"
+    brochureUrl: "/309"
   },
   {
     id: "3_310",
@@ -7682,7 +7684,7 @@ const residences = [
     rooms: "Studio / 1 Bathroom",
     interior: "459 SQ.FT. | 43 SQ.M.",
     total: "459 SQ.FT. | 43 SQ.M.",
-    brochureUrl: "./310"
+    brochureUrl: "/310"
   },
   {
     id: "3_311",
@@ -7693,7 +7695,7 @@ const residences = [
     interior: "556 SQ.FT. | 52 SQ.M.",
     exterior: "89 SQ.FT. | 8 SQ.M.",
     total: "654 SQ.FT. | 61 SQ.M.",
-    brochureUrl: "./311"
+    brochureUrl: "/311"
   },
   {
     id: "PH_01",
@@ -7704,7 +7706,7 @@ const residences = [
     interior: "873 SQ.FT. | 81 SQ.M.",
     exterior: "342 SQ.FT. | 32 SQ.M.",
     total: "1,215 SQ.FT. | 113 SQ.M.",
-    brochureUrl: "./ph1"
+    brochureUrl: "/ph1"
   },
   {
     id: "PH_02",
@@ -7715,7 +7717,7 @@ const residences = [
     interior: "889 SQ.FT. | 83 SQ.M.",
     exterior: "352 SQ.FT. | 33 SQ.M.",
     total: "1,241 SQ.FT. | 115 SQ.M.",
-    brochureUrl: "./ph2"
+    brochureUrl: "/ph2"
   },
   {
     id: "PH_03",
@@ -7726,7 +7728,7 @@ const residences = [
     interior: "721 SQ.FT. | 67 SQ.M.",
     exterior: "151 SQ.FT. | 14 SQ.M.",
     total: "872 SQ.FT. | 81 SQ.M.",
-    brochureUrl: "./ph3"
+    brochureUrl: "/ph3"
   },
   {
     id: "PH_04",
@@ -7737,7 +7739,7 @@ const residences = [
     interior: "414 SQ.FT. | 38 SQ.M.",
     exterior: "191 SQ.FT. | 18 SQ.M.",
     total: "605 SQ.FT. | 56 SQ.M.",
-    brochureUrl: "./ph4"
+    brochureUrl: "/ph4"
   },
   {
     id: "PH_05",
@@ -7748,7 +7750,7 @@ const residences = [
     interior: "548 SQ.FT. | 51 SQ.M.",
     exterior: "140 SQ.FT. | 13 SQ.M.",
     total: "688 SQ.FT. | 64 SQ.M.",
-    brochureUrl: "./ph5"
+    brochureUrl: "/ph5"
   },
   {
     id: "PH_06",
@@ -7759,7 +7761,7 @@ const residences = [
     interior: "834 SQ.FT. | 77 SQ.M.",
     exterior: "370 SQ.FT. | 34 SQ.M.",
     total: "1,204 SQ.FT. | 112 SQ.M.",
-    brochureUrl: "./ph6"
+    brochureUrl: "/ph6"
   },
   {
     id: "PH_07",
@@ -7770,7 +7772,7 @@ const residences = [
     interior: "1,342 SQ.FT. | 125 SQ.M.",
     exterior: "1,287 SQ.FT. | 120 SQ.M.",
     total: "2,629 SQ.FT. | 244 SQ.M.",
-    brochureUrl: "./ph7"
+    brochureUrl: "/ph7"
   }
 ];
 const Data = {
