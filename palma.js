@@ -7243,6 +7243,10 @@ const _sfc_main$4 = {
     document.querySelectorAll(`#${this.id} *[data-id]`).forEach((item) => {
       this.setClickEvent(item);
     });
+    const floor_4_12_01 = document.getElementById(this.id);
+    if (this.id === "level_4-12") {
+      floor_4_12_01.open = true;
+    }
   },
   methods: {
     resetAllSelectedClass() {
