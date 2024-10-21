@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue';
 import { resolve } from "path";
 import { useCDN } from "./cdn";
 
-const CDN_URL = 'https://lordfitoi.github.io/floorplan-widget'
+const CDN_URL = 'https://bin-cosoc.github.io/floorplan-widget'
 
 
 // https://vitejs.dev/config/

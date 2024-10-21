@@ -1,5 +1,27 @@
-# Vue 3 + Vite
+# Floorplan Widget
+A floorplan widget reusable for multiple projects of C.O.S.O.C by Bin Huang
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## How to setup
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+Install node dependencies
+```bash
+npm i
+```
+
+## Run dev mode
+
+To see the changes locally
+```bash
+npm run dev
+```
+
+Then select the project to use in the list.
+
+## How to use it in prod
+
+Just copy the follow code and replace it with the name of the respective project app. (This example use `palma` project). 
+```html
+<div id="app"></div>
+<script async crossorigin type="module" src="https://bin-cosoc.github.io/floorplan-widget/palma.js"></script>
+<link rel="stylesheet" crossorigin href="https://bin-cosoc.github.io/floorplan-widget/assets/palma.css">
+```
