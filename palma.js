@@ -7472,14 +7472,14 @@ const floors = [
     svgUrl: "/src/assets/imgs/palma/PH/floor.svg"
   },
   {
-    id: "level_3",
-    title: "LEVEL 3",
-    svgUrl: "/src/assets/imgs/palma/3/floor.svg"
-  },
-  {
     id: "level_4-12",
     title: "LEVELS 4-12",
     svgUrl: "/src/assets/imgs/palma/4-12/floor.svg"
+  },
+  {
+    id: "level_3",
+    title: "LEVEL 3",
+    svgUrl: "/src/assets/imgs/palma/3/floor.svg"
   }
 ];
 const residences = [
