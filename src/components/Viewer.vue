@@ -1,6 +1,8 @@
 <template>
+    
     <div class="viewer">
-        <h3 id="residenceTitle">{{ store.selected.title }}</h3>
+        <Details class="not-in-mobile" /> 
+        
         <div class="container">
             <img v-if="pngUrl" id="floorplan-image" :src="pngUrl" alt="">
         </div>
@@ -20,8 +22,10 @@ async function getPNGs() {
     return Object.fromEntries(data);
 }
 
+import Details from './Details.vue';
 
 export default {
+    components: {Details},
     async setup() {
         return {
             store: useStore(),
