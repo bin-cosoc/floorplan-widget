@@ -1,335 +1,331 @@
-
 {
-    "floors": [
-        {
-            "id": "penthouse",
-            "title": "PENTHOUSE",
-            "svgUrl": "/src/assets/imgs/palma/PH/floor.svg"    
-        },
-        {
-            "id": "level_3",
-            "title": "LEVEL 3",
-            "svgUrl": "/src/assets/imgs/palma/3/floor.svg"    
-        },
-        {
-            "id": "level_4-12",
-            "title": "LEVELS 4-12",
-            "svgUrl": "/src/assets/imgs/palma/4-12/floor.svg"    
-        }
-      
-    ],
-    "residences": [
-        {
-            "id": "4-12_01",
-            "title": "RESIDENCE 01",
-            "level": "LEVELS 4-12",
-            "imgUrl": "/src/assets/imgs/palma/4-12/01.png",
-            "rooms": "2 Bedrooms / 1 Bathroom",
-            "interior": "620 SQ.FT. | 58 SQ.M.",
-            "exterior": "149 SQ.FT. | 14 SQ.M.",
-            "total": "769 SQ.FT. | 71 SQ.M.", 
-            "brochureUrl": "/4-12_01"
-        },
-        {
-            "id": "4-12_02",
-            "title": "RESIDENCE 02",
-            "level": "LEVELS 4-12",
-            "imgUrl": "/src/assets/imgs/palma/4-12/02.png",
-            "rooms": "2 Bedrooms / 2 Bathrooms",
-            "interior": "889 SQ.FT. | 83 SQ.M.",
-            "exterior": "291 SQ.FT. | 27 SQ.M.",
-            "total": "1,180 SQ.FT. | 110 SQ.M.", 
-            "brochureUrl": "/4-12_02"
-        },
-        {
-            "id": "4-12_03",
-            "title": "RESIDENCE 03",
-            "level": "LEVELS 4-12",
-            "imgUrl": "/src/assets/imgs/palma/4-12/03.png",
-            "rooms": "1 Bedroom / 1 Bathroom",
-            "interior": "410 SQ.FT. | 38 SQ.M.",
-            "exterior": "58 SQ.FT. | 5 SQ.M.",
-            "total": "468 SQ.FT. | 43 SQ.M.", 
-            "brochureUrl": "/4-12_03"
-        },
-        {
-            "id": "4-12_04",
-            "title": "RESIDENCE 04",
-            "level": "LEVELS 4-12",
-            "imgUrl": "/src/assets/imgs/palma/4-12/04.png",
-            "rooms": "1 Bedroom / 1 Bathroom",
-            "interior": "413 SQ.FT. | 39 SQ.M.",
-            "exterior": "150 SQ.FT. | 14 SQ.M.",
-            "total": "563 SQ.FT. | 52 SQ.M.", 
-            "brochureUrl": "/4-12_04"
-        },
-        {
-            "id": "4-12_05",
-            "title": "RESIDENCE 05",
-            "level": "LEVELS 4-12",
-            "imgUrl": "/src/assets/imgs/palma/4-12/05.png",
-            "rooms": "1 Bedroom / 1 Bathroom",
-            "interior": "405 SQ.FT. | 38 SQ.M.",
-            "exterior": "90 SQ.FT. | 8 SQ.M.",
-            "total": "495 SQ.FT. | 46 SQ.M.", 
-            "brochureUrl": "/4-12_05"
-        },
-        {
-            "id": "4-12_06",
-            "title": "RESIDENCE 06",
-            "level": "LEVELS 4-12",
-            "imgUrl": "/src/assets/imgs/palma/4-12/06.png",
-            "rooms": "1 Bedroom / 1 Bathroom",
-            "interior": "423 SQ.FT. | 39 SQ.M.",
-            "exterior": "151 SQ.FT. | 14 SQ.M.",
-            "total": "574 SQ.FT. | 53 SQ.M.", 
-            "brochureUrl": "/4-12_06"
-        },
-        {
-            "id": "4-12_07",
-            "title": "RESIDENCE 07",
-            "level": "LEVELS 4-12",
-            "imgUrl": "/src/assets/imgs/palma/4-12/07.png",
-            "rooms": "1 Bedroom / 1 Bathroom",
-            "interior": "442 SQ.FT. | 41 SQ.M.",
-            "exterior": "99 SQ.FT. | 9 SQ.M.",
-            "total": "541 SQ.FT. | 50 SQ.M.", 
-            "brochureUrl": "/4-12_07"
-        },
-        {
-            "id": "4-12_08",
-            "title": "RESIDENCE 08",
-            "level": "LEVELS 4-12",
-            "imgUrl": "/src/assets/imgs/palma/4-12/08.png",
-            "rooms": "1 Bedroom / 1 Bathroom",
-            "interior": "408 SQ.FT. | 38 SQ.M.",
-            "exterior": "140 SQ.FT. | 13 SQ.M.",
-            "total": "548 SQ.FT. | 51 SQ.M.", 
-            "brochureUrl": "/4-12_04"
-        },
-        {
-            "id": "4-12_09",
-            "title": "RESIDENCE 09",
-            "level": "LEVELS 4-12",
-            "imgUrl": "/src/assets/imgs/palma/4-12/09.png",
-            "rooms": "1 Bedroom / 1 Bathroom",
-            "interior": "440 SQ.FT. | 41 SQ.M.",
-            "exterior": "102 SQ.FT. | 9 SQ.M.",
-            "total": "542 SQ.FT. | 50 SQ.M.", 
-            "brochureUrl": "/4-12_09"
-        },
-        {
-            "id": "4-12_10",
-            "title": "RESIDENCE 10",
-            "level": "LEVELS 4-12",
-            "imgUrl": "/src/assets/imgs/palma/4-12/10.png",
-            "rooms": "1 Bedroom / 1 Bathroom",
-            "interior": "426 SQ.FT. | 40 SQ.M.",
-            "exterior": "135 SQ.FT. | 12 SQ.M.",
-            "total": "561 SQ.FT. | 52 SQ.M.", 
-            "brochureUrl": "/4-12_10"
-        },
-        {
-            "id": "4-12_11",
-            "title": "RESIDENCE 11",
-            "level": "LEVELS 4-12",
-            "imgUrl": "/src/assets/imgs/palma/4-12/11.png",
-            "rooms": "2 Bedrooms / 2 Bathrooms",
-            "interior": "843 SQ.FT. | 78 SQ.M.",
-            "exterior": "243 SQ.FT. | 23 SQ.M.",
-            "total": "1,086 SQ.FT. | 101 SQ.M.", 
-            "brochureUrl": "/4-12_11"
-        },
-        {
-            "id": "4-12_12",
-            "title": "RESIDENCE 12",
-            "level": "LEVELS 4-12",
-            "imgUrl": "/src/assets/imgs/palma/4-12/12.png",
-            "rooms": "1 Bedroom / 1 Bathroom",
-            "interior": "558 SQ.FT. | 52 SQ.M.",
-            "exterior": "201 SQ.FT. | 19 SQ.M.",
-            "total": "759 SQ.FT. | 71 SQ.M.", 
-            "brochureUrl": "/4-12_12"
-        },
-
-        {
-            "id": "3_301",
-            "title": "RESIDENCE 301",
-            "level": "LEVELS 3",
-            "imgUrl": "/src/assets/imgs/palma/3/301.png",
-            "rooms": "Studio / 1 Bathroom",
-            "interior": "416 SQ.FT. | 39 SQ.M.",
-            "total": "416 SQ.FT. | 39 SQ.M.", 
-            "brochureUrl": "/301"
-        },
-        {
-            "id": "3_302",
-            "title": "RESIDENCE 302",
-            "level": "LEVELS 3",
-            "imgUrl": "/src/assets/imgs/palma/3/302.png",
-            "rooms": "1 Bedroom / 1 Bathroom",
-            "interior": "573 SQ.FT. | 53 SQ.M.",
-            "total": "573 SQ.FT. | 53 SQ.M.", 
-            "brochureUrl": "/302"
-        },
-        {
-            "id": "3_303",
-            "title": "RESIDENCE 303",
-            "level": "LEVELS 3",
-            "imgUrl": "/src/assets/imgs/palma/3/303.png",
-            "rooms": "1 Bedroom / 1 Bathroom",
-            "interior": "575 SQ.FT. | 53 SQ.M.",
-            "total": "575 SQ.FT. | 53 SQ.M.", 
-            "brochureUrl": "/303"
-        },
-        {
-            "id": "3_304",
-            "title": "RESIDENCE 304",
-            "level": "LEVELS 3",
-            "imgUrl": "/src/assets/imgs/palma/3/304.png",
-            "rooms": "1 Bedroom / 1 Bathroom",
-            "interior": "421 SQ.FT. | 39 SQ.M.",
-            "total": "421 SQ.FT. | 39 SQ.M.", 
-            "brochureUrl": "/304"
-        },
-        {
-            "id": "3_305",
-            "title": "RESIDENCE 305",
-            "level": "LEVELS 3",
-            "imgUrl": "/src/assets/imgs/palma/3/305.png",
-            "rooms": "1 Bedroom / 1 Bathroom",
-            "interior": "555 SQ.FT. | 52 SQ.M.",
-            "total": "555 SQ.FT. | 52 SQ.M.", 
-            "brochureUrl": "/305"
-        },
-        {
-            "id": "3_307",
-            "title": "RESIDENCE 307",
-            "level": "LEVELS 3",
-            "imgUrl": "/src/assets/imgs/palma/3/307.png",
-            "rooms": "1 Bedroom / 1 Bathroom",
-            "interior": "561 SQ.FT. | 52 SQ.M.",
-            "total": "561 SQ.FT. | 52 SQ.M.", 
-            "brochureUrl": "/307"
-        },
-        {
-            "id": "3_308",
-            "title": "RESIDENCE 308",
-            "level": "LEVELS 3",
-            "imgUrl": "/src/assets/imgs/palma/3/308.png",
-            "rooms": "1 Bedroom / 1 Bathroom",
-            "interior": "561 SQ.FT. | 52 SQ.M.",
-            "total": "575 SQ.FT. | 52 SQ.M.", 
-            "brochureUrl": "/308"
-        },
-        {
-            "id": "3_309",
-            "title": "RESIDENCE 309",
-            "level": "LEVELS 3",
-            "imgUrl": "/src/assets/imgs/palma/3/309.png",
-            "rooms": "1 Bedroom / 1 Bathroom",
-            "interior": "553 SQ.FT. | 51 SQ.M.",
-            "total": "553 SQ.FT. | 51 SQ.M.", 
-            "brochureUrl": "/309"
-        },
-        {
-            "id": "3_310",
-            "title": "RESIDENCE 310",
-            "level": "LEVELS 3",
-            "imgUrl": "/src/assets/imgs/palma/3/310.png",
-            "rooms": "Studio / 1 Bathroom",
-            "interior": "459 SQ.FT. | 43 SQ.M.",
-            "total": "459 SQ.FT. | 43 SQ.M.", 
-            "brochureUrl": "/310"
-        },
-        {
-            "id": "3_311",
-            "title": "RESIDENCE 311",
-            "level": "LEVELS 3",
-            "imgUrl": "/src/assets/imgs/palma/3/311.png",
-            "rooms": "1 Bedroom / 1 Bathroom",
-            "interior": "556 SQ.FT. | 52 SQ.M.",
-            "exterior": "89 SQ.FT. | 8 SQ.M.",
-            "total": "654 SQ.FT. | 61 SQ.M.", 
-            "brochureUrl": "/311"
-        },
-
-        {
-            "id": "PH_01",
-            "title": "PENTHOUSE 01",
-            "level": "PENTHOUSE",
-            "imgUrl": "/src/assets/imgs/palma/PH/PH1.png",
-            "rooms": "2 Bedrooms / 2 Bathrooms",
-            "interior": "873 SQ.FT. | 81 SQ.M.",
-            "exterior": "342 SQ.FT. | 32 SQ.M.",
-            "total": "1,215 SQ.FT. | 113 SQ.M.", 
-            "brochureUrl": "/ph1"
-        },
-        {
-            "id": "PH_02",
-            "title": "PENTHOUSE 02",
-            "level": "PENTHOUSE",
-            "imgUrl": "/src/assets/imgs/palma/PH/PH2.png",
-            "rooms": "2 Bedrooms / 2 Bathrooms",
-            "interior": "889 SQ.FT. | 83 SQ.M.",
-            "exterior": "352 SQ.FT. | 33 SQ.M.",
-            "total": "1,241 SQ.FT. | 115 SQ.M.", 
-            "brochureUrl": "/ph2"
-        },
-        {
-            "id": "PH_03",
-            "title": "PENTHOUSE 03",
-            "level": "PENTHOUSE",
-            "imgUrl": "/src/assets/imgs/palma/PH/PH3.png",
-            "rooms": "2 Bedrooms / 2 Bathrooms",
-            "interior": "721 SQ.FT. | 67 SQ.M.",
-            "exterior": "151 SQ.FT. | 14 SQ.M.",
-            "total": "872 SQ.FT. | 81 SQ.M.", 
-            "brochureUrl": "/ph3"
-        },
-        {
-            "id": "PH_04",
-            "title": "PENTHOUSE 04",
-            "level": "PENTHOUSE",
-            "imgUrl": "/src/assets/imgs/palma/PH/PH4.png",
-            "rooms": "1 Bedroom / 1 Bathroom",
-            "interior": "414 SQ.FT. | 38 SQ.M.",
-            "exterior": "191 SQ.FT. | 18 SQ.M.",
-            "total": "605 SQ.FT. | 56 SQ.M.", 
-            "brochureUrl": "/ph4"
-        },
-        {
-            "id": "PH_05",
-            "title": "PENTHOUSE 05",
-            "level": "PENTHOUSE",
-            "imgUrl": "/src/assets/imgs/palma/PH/PH5.png",
-            "rooms": "1 Bedroom / 1 Bathroom",
-            "interior": "548 SQ.FT. | 51 SQ.M.",
-            "exterior": "140 SQ.FT. | 13 SQ.M.",
-            "total": "688 SQ.FT. | 64 SQ.M.", 
-            "brochureUrl": "/ph5"
-        },
-        {
-            "id": "PH_06",
-            "title": "PENTHOUSE 06",
-            "level": "PENTHOUSE",
-            "imgUrl": "/src/assets/imgs/palma/PH/PH6.png",
-            "rooms": "2 Bedrooms / 2 Bathrooms",
-            "interior": "834 SQ.FT. | 77 SQ.M.",
-            "exterior": "370 SQ.FT. | 34 SQ.M.",
-            "total": "1,204 SQ.FT. | 112 SQ.M.", 
-            "brochureUrl": "/ph6"
-        },
-        {
-            "id": "PH_07",
-            "title": "PENTHOUSE 07",
-            "level": "PENTHOUSE",
-            "imgUrl": "/src/assets/imgs/palma/PH/PH7.png",
-            "rooms": "2 Bedrooms / 2 Bathrooms",
-            "interior": "1,342 SQ.FT. | 125 SQ.M.",
-            "exterior": "1,287 SQ.FT. | 120 SQ.M.",
-            "total": "2,629 SQ.FT. | 244 SQ.M.", 
-            "brochureUrl": "/ph7"
-        }
-    ]
+  "floors": [
+    {
+      "id": "penthouse",
+      "title": "PENTHOUSE",
+      "svgUrl": "/src/assets/imgs/palma/PH/floor.svg"
+    },
+    {
+      "id": "level_3",
+      "title": "LEVEL 3",
+      "svgUrl": "/src/assets/imgs/palma/3/floor.svg"
+    },
+    {
+      "id": "level_4-12",
+      "title": "LEVELS 4-12",
+      "svgUrl": "/src/assets/imgs/palma/4-12/floor.svg"
+    }
+  ],
+  "residences": [
+    {
+      "id": "4-12_01",
+      "title": "RESIDENCE 01",
+      "level": "LEVELS 4-12",
+      "imgUrl": "/src/assets/imgs/palma/4-12/01.png",
+      "rooms": "2 Bedrooms / 1 Bathroom",
+      "interior": "620 SQ.FT. | 58 SQ.M.",
+      "exterior": "149 SQ.FT. | 14 SQ.M.",
+      "total": "769 SQ.FT. | 71 SQ.M.",
+      "brochureUrl": "/2024/09/4-12_01.pdf"
+    },
+    {
+      "id": "4-12_02",
+      "title": "RESIDENCE 02",
+      "level": "LEVELS 4-12",
+      "imgUrl": "/src/assets/imgs/palma/4-12/02.png",
+      "rooms": "2 Bedrooms / 2 Bathrooms",
+      "interior": "889 SQ.FT. | 83 SQ.M.",
+      "exterior": "291 SQ.FT. | 27 SQ.M.",
+      "total": "1,180 SQ.FT. | 110 SQ.M.",
+      "brochureUrl": "/2024/09/4-12_02.pdf"
+    },
+    {
+      "id": "4-12_03",
+      "title": "RESIDENCE 03",
+      "level": "LEVELS 4-12",
+      "imgUrl": "/src/assets/imgs/palma/4-12/03.png",
+      "rooms": "1 Bedroom / 1 Bathroom",
+      "interior": "410 SQ.FT. | 38 SQ.M.",
+      "exterior": "58 SQ.FT. | 5 SQ.M.",
+      "total": "468 SQ.FT. | 43 SQ.M.",
+      "brochureUrl": "/2024/09/4-12_03.pdf"
+    },
+    {
+      "id": "4-12_04",
+      "title": "RESIDENCE 04",
+      "level": "LEVELS 4-12",
+      "imgUrl": "/src/assets/imgs/palma/4-12/04.png",
+      "rooms": "1 Bedroom / 1 Bathroom",
+      "interior": "413 SQ.FT. | 39 SQ.M.",
+      "exterior": "150 SQ.FT. | 14 SQ.M.",
+      "total": "563 SQ.FT. | 52 SQ.M.",
+      "brochureUrl": "/2024/09/4-12_04.pdf"
+    },
+    {
+      "id": "4-12_05",
+      "title": "RESIDENCE 05",
+      "level": "LEVELS 4-12",
+      "imgUrl": "/src/assets/imgs/palma/4-12/05.png",
+      "rooms": "1 Bedroom / 1 Bathroom",
+      "interior": "405 SQ.FT. | 38 SQ.M.",
+      "exterior": "90 SQ.FT. | 8 SQ.M.",
+      "total": "495 SQ.FT. | 46 SQ.M.",
+      "brochureUrl": "/2024/09/4-12_05.pdf"
+    },
+    {
+      "id": "4-12_06",
+      "title": "RESIDENCE 06",
+      "level": "LEVELS 4-12",
+      "imgUrl": "/src/assets/imgs/palma/4-12/06.png",
+      "rooms": "1 Bedroom / 1 Bathroom",
+      "interior": "423 SQ.FT. | 39 SQ.M.",
+      "exterior": "151 SQ.FT. | 14 SQ.M.",
+      "total": "574 SQ.FT. | 53 SQ.M.",
+      "brochureUrl": "/2024/09/4-12_06.pdf"
+    },
+    {
+      "id": "4-12_07",
+      "title": "RESIDENCE 07",
+      "level": "LEVELS 4-12",
+      "imgUrl": "/src/assets/imgs/palma/4-12/07.png",
+      "rooms": "1 Bedroom / 1 Bathroom",
+      "interior": "442 SQ.FT. | 41 SQ.M.",
+      "exterior": "99 SQ.FT. | 9 SQ.M.",
+      "total": "541 SQ.FT. | 50 SQ.M.",
+      "brochureUrl": "/2024/09/4-12_07.pdf"
+    },
+    {
+      "id": "4-12_08",
+      "title": "RESIDENCE 08",
+      "level": "LEVELS 4-12",
+      "imgUrl": "/src/assets/imgs/palma/4-12/08.png",
+      "rooms": "1 Bedroom / 1 Bathroom",
+      "interior": "408 SQ.FT. | 38 SQ.M.",
+      "exterior": "140 SQ.FT. | 13 SQ.M.",
+      "total": "548 SQ.FT. | 51 SQ.M.",
+      "brochureUrl": "/2024/09/4-12_04.pdf"
+    },
+    {
+      "id": "4-12_09",
+      "title": "RESIDENCE 09",
+      "level": "LEVELS 4-12",
+      "imgUrl": "/src/assets/imgs/palma/4-12/09.png",
+      "rooms": "1 Bedroom / 1 Bathroom",
+      "interior": "440 SQ.FT. | 41 SQ.M.",
+      "exterior": "102 SQ.FT. | 9 SQ.M.",
+      "total": "542 SQ.FT. | 50 SQ.M.",
+      "brochureUrl": "/2024/09/4-12_09.pdf"
+    },
+    {
+      "id": "4-12_10",
+      "title": "RESIDENCE 10",
+      "level": "LEVELS 4-12",
+      "imgUrl": "/src/assets/imgs/palma/4-12/10.png",
+      "rooms": "1 Bedroom / 1 Bathroom",
+      "interior": "426 SQ.FT. | 40 SQ.M.",
+      "exterior": "135 SQ.FT. | 12 SQ.M.",
+      "total": "561 SQ.FT. | 52 SQ.M.",
+      "brochureUrl": "/2024/09/4-12_10.pdf"
+    },
+    {
+      "id": "4-12_11",
+      "title": "RESIDENCE 11",
+      "level": "LEVELS 4-12",
+      "imgUrl": "/src/assets/imgs/palma/4-12/11.png",
+      "rooms": "2 Bedrooms / 2 Bathrooms",
+      "interior": "843 SQ.FT. | 78 SQ.M.",
+      "exterior": "243 SQ.FT. | 23 SQ.M.",
+      "total": "1,086 SQ.FT. | 101 SQ.M.",
+      "brochureUrl": "/2024/09/4-12_11.pdf"
+    },
+    {
+      "id": "4-12_12",
+      "title": "RESIDENCE 12",
+      "level": "LEVELS 4-12",
+      "imgUrl": "/src/assets/imgs/palma/4-12/12.png",
+      "rooms": "1 Bedroom / 1 Bathroom",
+      "interior": "558 SQ.FT. | 52 SQ.M.",
+      "exterior": "201 SQ.FT. | 19 SQ.M.",
+      "total": "759 SQ.FT. | 71 SQ.M.",
+      "brochureUrl": "/2024/09/4-12_12.pdf"
+    },
+    {
+      "id": "3_301",
+      "title": "RESIDENCE 301",
+      "level": "LEVELS 3",
+      "imgUrl": "/src/assets/imgs/palma/3/301.png",
+      "rooms": "Studio / 1 Bathroom",
+      "interior": "416 SQ.FT. | 39 SQ.M.",
+      "total": "416 SQ.FT. | 39 SQ.M.",
+      "brochureUrl": "/2024/10/301.pdf"
+    },
+    {
+      "id": "3_302",
+      "title": "RESIDENCE 302",
+      "level": "LEVELS 3",
+      "imgUrl": "/src/assets/imgs/palma/3/302.png",
+      "rooms": "1 Bedroom / 1 Bathroom",
+      "interior": "573 SQ.FT. | 53 SQ.M.",
+      "total": "573 SQ.FT. | 53 SQ.M.",
+      "brochureUrl": "/2024/10/302.pdf"
+    },
+    {
+      "id": "3_303",
+      "title": "RESIDENCE 303",
+      "level": "LEVELS 3",
+      "imgUrl": "/src/assets/imgs/palma/3/303.png",
+      "rooms": "1 Bedroom / 1 Bathroom",
+      "interior": "575 SQ.FT. | 53 SQ.M.",
+      "total": "575 SQ.FT. | 53 SQ.M.",
+      "brochureUrl": "/2024/10/303.pdf"
+    },
+    {
+      "id": "3_304",
+      "title": "RESIDENCE 304",
+      "level": "LEVELS 3",
+      "imgUrl": "/src/assets/imgs/palma/3/304.png",
+      "rooms": "1 Bedroom / 1 Bathroom",
+      "interior": "421 SQ.FT. | 39 SQ.M.",
+      "total": "421 SQ.FT. | 39 SQ.M.",
+      "brochureUrl": "/2024/10/304.pdf"
+    },
+    {
+      "id": "3_305",
+      "title": "RESIDENCE 305",
+      "level": "LEVELS 3",
+      "imgUrl": "/src/assets/imgs/palma/3/305.png",
+      "rooms": "1 Bedroom / 1 Bathroom",
+      "interior": "555 SQ.FT. | 52 SQ.M.",
+      "total": "555 SQ.FT. | 52 SQ.M.",
+      "brochureUrl": "/2024/10/305.pdf"
+    },
+    {
+      "id": "3_307",
+      "title": "RESIDENCE 307",
+      "level": "LEVELS 3",
+      "imgUrl": "/src/assets/imgs/palma/3/307.png",
+      "rooms": "1 Bedroom / 1 Bathroom",
+      "interior": "561 SQ.FT. | 52 SQ.M.",
+      "total": "561 SQ.FT. | 52 SQ.M.",
+      "brochureUrl": "/2024/10/307.pdf"
+    },
+    {
+      "id": "3_308",
+      "title": "RESIDENCE 308",
+      "level": "LEVELS 3",
+      "imgUrl": "/src/assets/imgs/palma/3/308.png",
+      "rooms": "1 Bedroom / 1 Bathroom",
+      "interior": "561 SQ.FT. | 52 SQ.M.",
+      "total": "575 SQ.FT. | 52 SQ.M.",
+      "brochureUrl": "/2024/10/308.pdf"
+    },
+    {
+      "id": "3_309",
+      "title": "RESIDENCE 309",
+      "level": "LEVELS 3",
+      "imgUrl": "/src/assets/imgs/palma/3/309.png",
+      "rooms": "1 Bedroom / 1 Bathroom",
+      "interior": "553 SQ.FT. | 51 SQ.M.",
+      "total": "553 SQ.FT. | 51 SQ.M.",
+      "brochureUrl": "/2024/10/309.pdf"
+    },
+    {
+      "id": "3_310",
+      "title": "RESIDENCE 310",
+      "level": "LEVELS 3",
+      "imgUrl": "/src/assets/imgs/palma/3/310.png",
+      "rooms": "Studio / 1 Bathroom",
+      "interior": "459 SQ.FT. | 43 SQ.M.",
+      "total": "459 SQ.FT. | 43 SQ.M.",
+      "brochureUrl": "/2024/10/310.pdf"
+    },
+    {
+      "id": "3_311",
+      "title": "RESIDENCE 311",
+      "level": "LEVELS 3",
+      "imgUrl": "/src/assets/imgs/palma/3/311.png",
+      "rooms": "1 Bedroom / 1 Bathroom",
+      "interior": "556 SQ.FT. | 52 SQ.M.",
+      "exterior": "89 SQ.FT. | 8 SQ.M.",
+      "total": "654 SQ.FT. | 61 SQ.M.",
+      "brochureUrl": "/2024/09/311.pdf"
+    },
+    {
+      "id": "PH_01",
+      "title": "PENTHOUSE 01",
+      "level": "PENTHOUSE",
+      "imgUrl": "/src/assets/imgs/palma/PH/PH1.png",
+      "rooms": "2 Bedrooms / 2 Bathrooms",
+      "interior": "873 SQ.FT. | 81 SQ.M.",
+      "exterior": "342 SQ.FT. | 32 SQ.M.",
+      "total": "1,215 SQ.FT. | 113 SQ.M.",
+      "brochureUrl": "/2024/09/PH1.pdf"
+    },
+    {
+      "id": "PH_02",
+      "title": "PENTHOUSE 02",
+      "level": "PENTHOUSE",
+      "imgUrl": "/src/assets/imgs/palma/PH/PH2.png",
+      "rooms": "2 Bedrooms / 2 Bathrooms",
+      "interior": "889 SQ.FT. | 83 SQ.M.",
+      "exterior": "352 SQ.FT. | 33 SQ.M.",
+      "total": "1,241 SQ.FT. | 115 SQ.M.",
+      "brochureUrl": "/2024/09/PH2.pdf"
+    },
+    {
+      "id": "PH_03",
+      "title": "PENTHOUSE 03",
+      "level": "PENTHOUSE",
+      "imgUrl": "/src/assets/imgs/palma/PH/PH3.png",
+      "rooms": "2 Bedrooms / 2 Bathrooms",
+      "interior": "721 SQ.FT. | 67 SQ.M.",
+      "exterior": "151 SQ.FT. | 14 SQ.M.",
+      "total": "872 SQ.FT. | 81 SQ.M.",
+      "brochureUrl": "/2024/09/PH3.pdf"
+    },
+    {
+      "id": "PH_04",
+      "title": "PENTHOUSE 04",
+      "level": "PENTHOUSE",
+      "imgUrl": "/src/assets/imgs/palma/PH/PH4.png",
+      "rooms": "1 Bedroom / 1 Bathroom",
+      "interior": "414 SQ.FT. | 38 SQ.M.",
+      "exterior": "191 SQ.FT. | 18 SQ.M.",
+      "total": "605 SQ.FT. | 56 SQ.M.",
+      "brochureUrl": "/2024/09/PH4.pdf"
+    },
+    {
+      "id": "PH_05",
+      "title": "PENTHOUSE 05",
+      "level": "PENTHOUSE",
+      "imgUrl": "/src/assets/imgs/palma/PH/PH5.png",
+      "rooms": "1 Bedroom / 1 Bathroom",
+      "interior": "548 SQ.FT. | 51 SQ.M.",
+      "exterior": "140 SQ.FT. | 13 SQ.M.",
+      "total": "688 SQ.FT. | 64 SQ.M.",
+      "brochureUrl": "/2024/09/PH5.pdf"
+    },
+    {
+      "id": "PH_06",
+      "title": "PENTHOUSE 06",
+      "level": "PENTHOUSE",
+      "imgUrl": "/src/assets/imgs/palma/PH/PH6.png",
+      "rooms": "2 Bedrooms / 2 Bathrooms",
+      "interior": "834 SQ.FT. | 77 SQ.M.",
+      "exterior": "370 SQ.FT. | 34 SQ.M.",
+      "total": "1,204 SQ.FT. | 112 SQ.M.",
+      "brochureUrl": "/2024/09/PH6.pdf"
+    },
+    {
+      "id": "PH_07",
+      "title": "PENTHOUSE 07",
+      "level": "PENTHOUSE",
+      "imgUrl": "/src/assets/imgs/palma/PH/PH7.png",
+      "rooms": "2 Bedrooms / 2 Bathrooms",
+      "interior": "1,342 SQ.FT. | 125 SQ.M.",
+      "exterior": "1,287 SQ.FT. | 120 SQ.M.",
+      "total": "2,629 SQ.FT. | 244 SQ.M.",
+      "brochureUrl": "/2024/09/PH7.pdf"
+    }
+  ]
 }

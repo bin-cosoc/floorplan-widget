@@ -46,7 +46,7 @@ export default {
     },
     mounted() {
         window.addEventListener('load', () => {
-            this.baseUrl = window.wpApiSettings?.root?.replace('/wp-json/', '') || '';
+            this.baseUrl = window.wpApiSettings?.root?.replace('/wp-json/', '') || 'https://cosoc.co/palma/wp-content/uploads';
         })
     }
 }
