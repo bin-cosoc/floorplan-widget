@@ -1,306 +1,406 @@
 .floorplan {
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 32px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
 
-    & aside {
-        display: flex;
-        flex-direction: column;
+  & aside {
+    display: flex;
+    flex-direction: column;
 
-        & h2 {
-            margin-top: 0;
-            margin-bottom: 24px;
-            color: #7B705E;
+    & h2 {
+      margin-top: 0;
+      margin-bottom: 24px;
+      color: #7b705e;
+    }
+
+    & details {
+      border-top: 1px solid #e3ded9;
+
+      & summary {
+        text-transform: uppercase;
+        padding: 12px 16px;
+        list-style: none;
+        color: #9e8e82;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 500;
+
+        &::-webkit-details-marker {
+          display: none;
         }
+      }
 
-        & details {
-            border-top: 1px solid #e3ded9;
+      &:last-child {
+        border-bottom: 1px solid #e3ded9;
+        margin-bottom: 72px;
+      }
+    }
 
-            & summary {
-                text-transform: uppercase;
-                padding: 12px 16px;
-                list-style: none;
-                color: #9E8E82;
-                cursor: pointer;
-                font-size: 20px;
-                font-weight: 500;
+    & .interior,
+    & .exterior,
+    & .title {
+      margin-top: 0px;
+      margin-bottom: 12px;
+      color: #7b9386;
+    }
 
-                &::-webkit-details-marker {
-                    display: none;
-                }
-            }
+    & .level,
+    & .rooms {
+      margin-top: 0px;
+      margin-bottom: 24px !important;
+      color: #7b9386;
+    }
 
-            &:last-child {
-                border-bottom: 1px solid #e3ded9;
-                margin-bottom: 72px;
-            }
-        }
+    & .total {
+      margin-top: 0;
+    }
 
-        & .interior,
-        & .exterior,
+    & a[download] {
+      display: flex;
+      margin: 0px;
+      margin-top: 48px;
+      text-transform: uppercase;
+      padding: 12px 24px;
+      border: 1px solid #7b9386;
+      transition: color 200ms, background-color 200ms;
+      text-align: center;
+      justify-content: center;
+      align-self: flex-start;
+      width: auto;
+      font-size: 16px;
+      font-family: "Montserrat", sans-serif;
+      color: #7b9386;
+      text-decoration: none;
+      white-space: nowrap;
+      font-weight: 500;
+
+      &:hover {
+        background-color: #a8a195;
+        color: #ffffff;
+      }
+    }
+
+    & #residenceInfo {
+      color: #7b9386;
+
+      & .title {
+        font-size: 2.25rem;
+        line-height: 1em;
+        margin-bottom: 0.75rem;
+      }
+
+      & .level {
+        font-size: 1.25rem;
+        line-height: 1.2em;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      & .rooms {
+        font-size: 18px;
+      }
+
+      & p {
+        font-size: 16px;
+        color: #7b9386;
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  & .viewer {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 2 / span 2;
+
+    & h3 {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 48px;
+      margin-top: 0;
+      font-size: 36px;
+      color: #7b9386;
+    }
+
+    & .container {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+
+      & img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: contain;
+      }
+    }
+
+    & a[download] {
+      display: flex;
+      margin: 0px;
+      margin-top: 48px;
+      text-transform: uppercase;
+      padding: 12px 24px;
+      border: 1px solid #7b9386;
+      transition: color 200ms, background-color 200ms;
+      text-align: center;
+      justify-content: center;
+      align-self: flex-start;
+      width: auto;
+      font-size: 16px;
+      font-family: "Montserrat", sans-serif;
+      color: #7b9386;
+      text-decoration: none;
+      white-space: nowrap;
+      font-weight: 500;
+
+      &:hover {
+        background-color: #a8a195;
+        color: #ffffff;
+      }
+    }
+
+    & #residenceInfo {
+      color: #7b9386;
+
+      & .title {
+        font-size: 2.25rem;
+        line-height: 1em;
+        margin-bottom: 0.75rem;
+      }
+
+      & .level {
+        font-size: 1.25rem;
+        line-height: 1.2em;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      & .rooms {
+        font-size: 18px;
+      }
+
+      & p {
+        font-size: 16px;
+        color: #7b9386;
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  svg .floor {
+    & .bg {
+      fill: #ffffff;
+      transition: fill 200ms ease;
+      cursor: pointer;
+    }
+
+    &.active .bg,
+    &:hover .bg {
+      fill: #beb9b0;
+    }
+
+    &.disabled .bg {
+      fill: #dfdfdf;
+      cursor: not-allowed;
+    }
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .not-in-mobile {
+    display: block;
+    padding-bottom: 24px;
+    border-bottom:  1px solid #7b9386;
+    & #residenceInfo {
+      
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      row-gap: 12px;
+      & .title {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      & .level {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      & .rooms {
+        grid-column-start: 1;
+        grid-row-start: 3;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      & .interior {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        align-self:flex-end
+      }
+      & .exterior {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        align-self:flex-end
+        
+      }
+      & .total {
+        grid-column-start: 2;
+        grid-row-start: 3;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        align-self:flex-start
+      }
+      & #downloadButton {
+        grid-column-start: 3;
+        grid-row-start: 2;
+        grid-row-end: span 2;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        align-self:flex-end
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+
+    aside {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 4rem;
+      row-gap: 2rem;
+
+      h2 {
+        grid-column: span 2;
+        font-size: 2.5rem;
+        margin-bottom: 0;
+      }
+
+      #residenceInfo {
         & .title {
-            margin-top: 0px;
-            margin-bottom: 12px;
-            color: #7B9386;
+          font-size: 30px;
         }
 
-        & .level,
-        & .rooms {
-            margin-top: 0px;
-            margin-bottom: 24px !important;
-            color: #7B9386;
+        & .level {
+          font-size: 18px;
         }
 
-        & .total {
-            margin-top: 0;
+        & p.rooms {
+          font-size: 16px;
         }
 
-        & a[download] {
-            display: flex;
-            margin: 0px;
-            margin-top: 48px;
-            text-transform: uppercase;
-            padding: 12px 24px;
-            border: 1px solid #7B9386;
-            transition: color 200ms, background-color 200ms;
-            text-align: center;
-            justify-content: center;
-            align-self: flex-start;
-            width: auto;
-            font-size: 16px;
-            font-family: 'Montserrat', sans-serif;
-            color: #7B9386;
-            text-decoration: none;
-            white-space: nowrap;
-            font-weight: 500;
-
-            &:hover {
-                background-color: #A8A195;
-                color: #FFFFFF;
-            }
+        & p:not(.rooms) {
+          font-size: 14px;
         }
-
-        & #residenceInfo {
-
-            color: #7B9386;
-            
-            & .title {
-                font-size: 2.25rem;
-                line-height: 1em;
-                margin-bottom: 0.75rem;
-            }
-
-            & .level {
-                font-size: 1.25rem;
-                line-height: 1.2em;
-                font-family: 'Montserrat', sans-serif;
-            }
-
-            & .rooms {
-                font-size: 18px;
-            }
-
-            & p {
-                font-size: 16px;
-                color: #7B9386;
-                margin-bottom: 12px;
-            }
-        }
+      }
     }
 
-
-    & .viewer {
-        display: flex;
-        flex-direction: column;
-        grid-column: span 2 / span 2;
-
-        & h3 {
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 48px;
-            margin-top: 0;
-            font-size: 36px;
-            color: #7B9386;
-        }
-
-        & .container {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            position: relative;
-
-            & img {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                object-fit: contain;
-            }
-        }
+    .floorplan-container {
+      h2 {
+        font-size: 36px;
+      }
     }
 
-    svg .floor {
-        & .bg {
-            fill: #FFFFFF;
-            transition: fill 200ms ease;
-            cursor: pointer;
-        }
-
-        &.active .bg,
-        &:hover .bg {
-            fill: #beb9b0;
-        }
-
-        &.disabled .bg {
-            fill: #dfdfdf;
-            cursor: not-allowed;
-        }
+    .viewer h3 {
+      font-size: 36px;
+      margin-bottom: 32px;
     }
 
+    .viewer .container img {
+      position: static;
+    }
+  }
+
+  @media (max-width: 767px) {
     .mobile-only {
-        display: none;
+      display: block;
     }
 
     .not-in-mobile {
-        display: block;
+      display: none;
     }
 
-    @media (max-width: 1024px) {
-        display: flex;
-        flex-direction: column;
+    & aside {
+      gap: 16px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
 
-        aside {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            column-gap: 4rem;
-            row-gap: 2rem;
+      h2 {
+        font-size: 2rem;
+      }
 
-            h2 {
-                grid-column: span 2;
-                font-size: 2.5rem;
-                margin-bottom: 0;
-            }
+      & .floorplan-container {
+        grid-column: 2 span / 2 span;
+      }
 
-            #residenceInfo {
-                & .title {
-                    font-size: 30px;
-                }
-
-                & .level {
-                    font-size: 18px;
-                }
-
-                & p.rooms
-                 {
-                    font-size: 16px;
-                }
-
-                &  p:not(.rooms) {
-                    font-size: 14px;
-                }
-            }
-        }
-
-        .floorplan-container {
-            h2 {
-                font-size: 36px;
-            }
-
-        }
-
-        .viewer h3{
-            font-size: 36px;
-            margin-bottom: 32px;
-        }
-
-        .viewer .container img {
-            position: static;
-        }
+      details:last-child {
+        margin-bottom: 0px;
+      }
     }
 
-    @media (max-width: 767px) {
-        .mobile-only {
-            display: block;
-        }
+    #residenceInfo {
+      color: #7b9386;
 
-        .not-in-mobile {
-            display: none;
-        }
+      > * {
+        margin-bottom: 0.5em;
+      }
 
-        & aside {
-            gap: 16px;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
+      & .title {
+        font-size: 24px;
+      }
 
-            h2 {
-                font-size: 2rem;
-            }
+      & .level {
+        font-size: 16px;
+        font-family: "Montserrat", sans-serif;
+        margin-bottom: 1em;
+      }
 
-            & .floorplan-container {
-                grid-column: 2 span / 2 span;
-            }
+      & p.rooms {
+        font-size: 16px;
+        margin-bottom: 1em;
+      }
 
-            details:last-child {
-                margin-bottom: 0px;
-            }
-        }
-
-        #residenceInfo {
-            color: #7B9386;
-
-            > * {
-                margin-bottom: 0.5em;
-            }
-            
-            & .title {
-                font-size: 24px;
-            }
-
-            & .level {
-                font-size: 16px;
-                font-family: 'Montserrat', sans-serif;
-                margin-bottom: 1em;
-            }
-
-            & p.rooms
-             {
-                font-size: 16px;
-                margin-bottom: 1em;
-            }
-
-            &  p:not(.rooms) {
-                font-size: 14px;
-            }
-        }
-
-       #downloadButton {
-            display: flex;
-            margin: 0px;
-            margin-top: 36px;
-            text-transform: uppercase;
-            padding: 12px 24px;
-            border: 1px solid #7B9386;
-            transition: color 200ms, background-color 200ms;
-            text-align: center;
-            justify-content: center;
-            align-self: flex-start;
-            font-size: 16px;
-            font-family: 'Montserrat', sans-serif;
-            color: #7B9386;
-            text-decoration: none;
-            white-space: nowrap;
-            font-weight: 500;
-
-            &:hover {
-                background-color: #A8A195;
-                color: #FFFFFF;
-            }
-            }
-
-        .viewer h3{
-            font-size: 24px;
-            margin-bottom: 24px;
-        }
+      & p:not(.rooms) {
+        font-size: 14px;
+      }
     }
 
+    #downloadButton {
+      display: flex;
+      margin: 0px;
+      margin-top: 36px;
+      text-transform: uppercase;
+      padding: 12px 24px;
+      border: 1px solid #7b9386;
+      transition: color 200ms, background-color 200ms;
+      text-align: center;
+      justify-content: center;
+      align-self: flex-start;
+      font-size: 16px;
+      font-family: "Montserrat", sans-serif;
+      color: #7b9386;
+      text-decoration: none;
+      white-space: nowrap;
+      font-weight: 500;
 
+      &:hover {
+        background-color: #a8a195;
+        color: #ffffff;
+      }
+    }
+
+    .viewer h3 {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+  }
 }

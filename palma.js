@@ -7280,7 +7280,7 @@ const _sfc_main$4 = {
     }
   }
 };
-const _hoisted_1$4 = ["id"];
+const _hoisted_1$3 = ["id"];
 const _hoisted_2$2 = ["innerHTML"];
 function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("details", {
@@ -7292,7 +7292,7 @@ function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
       class: "accordion-content",
       innerHTML: $setup.svgData
     }, null, 8, _hoisted_2$2)
-  ], 8, _hoisted_1$4);
+  ], 8, _hoisted_1$3);
 }
 const Floor = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render$4]]);
 const _sfc_main$3 = {
@@ -7321,38 +7321,43 @@ const _sfc_main$3 = {
     });
   }
 };
-const _hoisted_1$3 = { class: "residence-info-container" };
+const _hoisted_1$2 = { class: "residence-info-container" };
 const _hoisted_2$1 = { id: "residenceInfo" };
 const _hoisted_3$1 = { class: "title" };
-const _hoisted_4$1 = { class: "level" };
+const _hoisted_4 = { class: "level" };
 const _hoisted_5 = { class: "rooms" };
-const _hoisted_6 = { key: 0 };
-const _hoisted_7 = ["href", "download"];
+const _hoisted_6 = { class: "interior" };
+const _hoisted_7 = {
+  key: 0,
+  class: "exterior"
+};
+const _hoisted_8 = { class: "total" };
+const _hoisted_9 = ["href", "download"];
 function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
-  return openBlock(), createElementBlock("div", _hoisted_1$3, [
+  return openBlock(), createElementBlock("div", _hoisted_1$2, [
     createBaseVNode("div", _hoisted_2$1, [
       createBaseVNode("h2", _hoisted_3$1, toDisplayString($setup.store.selected.title), 1),
-      createBaseVNode("h4", _hoisted_4$1, toDisplayString($setup.store.selected.level), 1),
+      createBaseVNode("h4", _hoisted_4, toDisplayString($setup.store.selected.level), 1),
       createBaseVNode("p", _hoisted_5, toDisplayString($setup.store.selected.rooms), 1),
-      createBaseVNode("p", null, [
+      createBaseVNode("p", _hoisted_6, [
         _cache[0] || (_cache[0] = createBaseVNode("b", null, "Interior:", -1)),
         createTextVNode(" " + toDisplayString($setup.store.selected.interior), 1)
       ]),
-      $setup.store.selected.exterior ? (openBlock(), createElementBlock("p", _hoisted_6, [
+      $setup.store.selected.exterior ? (openBlock(), createElementBlock("p", _hoisted_7, [
         _cache[1] || (_cache[1] = createBaseVNode("b", null, "Exterior:", -1)),
         createTextVNode(" " + toDisplayString($setup.store.selected.exterior), 1)
       ])) : createCommentVNode("", true),
-      createBaseVNode("p", null, [
+      createBaseVNode("p", _hoisted_8, [
         _cache[2] || (_cache[2] = createBaseVNode("b", null, "Total:", -1)),
         createTextVNode(" " + toDisplayString($setup.store.selected.total), 1)
-      ])
-    ]),
-    $options.pdfUrl ? (openBlock(), createElementBlock("a", {
-      key: 0,
-      id: "downloadButton",
-      href: $options.pdfUrl,
-      download: $options.pdfName
-    }, " DOWNLOAD FLOOR PLAN → ", 8, _hoisted_7)) : createCommentVNode("", true)
+      ]),
+      $options.pdfUrl ? (openBlock(), createElementBlock("a", {
+        key: 1,
+        id: "downloadButton",
+        href: $options.pdfUrl,
+        download: $options.pdfName
+      }, " DOWNLOAD FLOOR PLAN → ", 8, _hoisted_9)) : createCommentVNode("", true)
+    ])
   ]);
 }
 const Details = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render$3]]);
@@ -7364,14 +7369,14 @@ const _sfc_main$2 = {
     };
   }
 };
-const _hoisted_1$2 = { class: "floorplan-container" };
 function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_Floor = resolveComponent("Floor");
-  const _component_Details = resolveComponent("Details");
   return openBlock(), createElementBlock("aside", null, [
-    _cache[1] || (_cache[1] = createBaseVNode("h2", null, "FLOOR PLANS", -1)),
-    createBaseVNode("div", _hoisted_1$2, [
-      _cache[0] || (_cache[0] = createBaseVNode("p", { style: { "color": "#9E8E82", "margin-bottom": "2rem", "font-size": "85%" } }, "Please select the residence from the floor plate to view detailed floor plan.", -1)),
+    createBaseVNode("div", null, [
+      _cache[0] || (_cache[0] = createBaseVNode("h2", null, "FLOOR PLANS", -1)),
+      _cache[1] || (_cache[1] = createBaseVNode("div", { class: "floorplan-container" }, [
+        createBaseVNode("p", { style: { "color": "#9E8E82", "margin-bottom": "2rem", "font-size": "85%" } }, "Please select the residence from the floor plate to view detailed floor plan.")
+      ], -1)),
       (openBlock(), createBlock(Suspense, null, {
         default: withCtx(() => [
           (openBlock(true), createElementBlock(Fragment, null, renderList(_ctx.$floorplan.floors, (data) => {
@@ -7384,8 +7389,7 @@ function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
         ]),
         _: 1
       }))
-    ]),
-    createVNode(_component_Details, { class: "not-in-mobile" })
+    ])
   ]);
 }
 const Aside = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render$2]]);
@@ -7398,6 +7402,7 @@ async function getPNGs() {
   return Object.fromEntries(data);
 }
 const _sfc_main$1 = {
+  components: { Details },
   async setup() {
     return {
       store: useStore()
@@ -7418,19 +7423,19 @@ const _sfc_main$1 = {
   }
 };
 const _hoisted_1$1 = { class: "viewer" };
-const _hoisted_2 = { id: "residenceTitle" };
-const _hoisted_3 = { class: "container" };
-const _hoisted_4 = ["src"];
+const _hoisted_2 = { class: "container" };
+const _hoisted_3 = ["src"];
 function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
+  const _component_Details = resolveComponent("Details");
   return openBlock(), createElementBlock("div", _hoisted_1$1, [
-    createBaseVNode("h3", _hoisted_2, toDisplayString($setup.store.selected.title), 1),
-    createBaseVNode("div", _hoisted_3, [
+    createVNode(_component_Details, { class: "not-in-mobile" }),
+    createBaseVNode("div", _hoisted_2, [
       $options.pngUrl ? (openBlock(), createElementBlock("img", {
         key: 0,
         id: "floorplan-image",
         src: $options.pngUrl,
         alt: ""
-      }, null, 8, _hoisted_4)) : createCommentVNode("", true)
+      }, null, 8, _hoisted_3)) : createCommentVNode("", true)
     ])
   ]);
 }
@@ -7461,6 +7466,11 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
 const App = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render]]);
 const floors = [
   {
+    id: "penthouse",
+    title: "PENTHOUSE",
+    svgUrl: "/src/assets/imgs/palma/PH/floor.svg"
+  },
+  {
     id: "level_3",
     title: "LEVEL 3",
     svgUrl: "/src/assets/imgs/palma/3/floor.svg"
@@ -7469,11 +7479,6 @@ const floors = [
     id: "level_4-12",
     title: "LEVELS 4-12",
     svgUrl: "/src/assets/imgs/palma/4-12/floor.svg"
-  },
-  {
-    id: "penthouse",
-    title: "PENTHOUSE",
-    svgUrl: "/src/assets/imgs/palma/PH/floor.svg"
   }
 ];
 const residences = [
