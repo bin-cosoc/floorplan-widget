@@ -209,13 +209,15 @@
   .mobile-only {
     display: none;
   }
-
+  .tablet-only {
+    display: none;
+  }
   .not-in-mobile {
     display: block;
     padding-bottom: 24px;
-    border-bottom:  1px solid #7b9386;
+    border-bottom:  1px solid #7b9386 ;
     & #residenceInfo {
-      
+      padding-top: 48px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       row-gap: 12px;
@@ -270,7 +272,7 @@
     }
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1025px) {
     display: flex;
     flex-direction: column;
 
@@ -320,7 +322,6 @@
       position: static;
     }
   }
-
   @media (max-width: 767px) {
     .mobile-only {
       display: block;
@@ -348,6 +349,84 @@
     }
 
     #residenceInfo {
+      color: #7b9386;
+
+      > * {
+        margin-bottom: 0.5em;
+      }
+
+      & .title {
+        font-size: 24px;
+      }
+
+      & .level {
+        font-size: 16px;
+        font-family: "Montserrat", sans-serif;
+        margin-bottom: 1em;
+      }
+
+      & p.rooms {
+        font-size: 16px;
+        margin-bottom: 1em;
+      }
+
+      & p:not(.rooms) {
+        font-size: 14px;
+      }
+    }
+
+    #downloadButton {
+      display: flex;
+      margin: 0px;
+      margin-top: 36px;
+      text-transform: uppercase;
+      padding: 12px 24px;
+      border: 1px solid #7b9386;
+      transition: color 200ms, background-color 200ms;
+      text-align: center;
+      justify-content: center;
+      align-self: flex-start;
+      font-size: 16px;
+      font-family: "Montserrat", sans-serif;
+      color: #7b9386;
+      text-decoration: none;
+      white-space: nowrap;
+      font-weight: 500;
+
+      &:hover {
+        background-color: #a8a195;
+        color: #ffffff;
+      }
+    }
+
+    .viewer h3 {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .tablet-only {
+        display: block;
+    }
+    .not-in-mobile {
+        display: none;
+    }
+
+    & aside {
+      gap: 16px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      details:last-child {
+        margin-bottom: 0px;
+      }
+    }
+
+    #residenceInfo {
+        padding-top: 4rem;
       color: #7b9386;
 
       > * {
